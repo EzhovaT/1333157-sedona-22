@@ -11,13 +11,13 @@
         <nav class="main-nav">
           <ul class="main-nav__list nav-list">
             <li class="nav-list__item">
-              <a class="nav-list__link">Главная</a>
+              <a class="nav-list__link" href="index.html">Главная</a>
             </li>
             <li class="nav-list__item">
-              <a class="nav-list__link">Фото и видео</a>
+              <a class="nav-list__link" href="catalog.html">Фото и видео</a>
             </li>
             <li class="nav-list__item">
-              <span class="nav-list__link">Форма отзыва</span>
+              <span class="nav-list__item-content">Форма отзыва</span>
             </li>
             <li class="nav-list__item">
               <a class="nav-list__link" href="https://htmlacademy.ru"
@@ -31,30 +31,30 @@
         </nav>
 
         <a class="main-logo">
-          <img src="/img/logotype-mobile.svg" alt="Город Седона" />
+          <img src="/img/logotype-mobile.svg" alt="Основной логотип сайта" />
         </a>
 
         <h1 class="page-header__title">Sedona</h1>
       </header>
 
       <main class="page-content">
-        <section class="main-tagline">
+        <div class="main-tagline">
           <h2 class="main-tagline__title">Оставьте свой отзыв</h2>
           <p class="main-tagline__description">
             Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о
             посещенных вами достопримечательностях
           </p>
-        </section>
+        </div>
 
-        <form class="recall-form" action="https://echo.htmlacademy.ru">
-          <fieldset class="recall-form__fieldset recall-form__fieldset_users">
-            <legend class="recall-form__title">Представьтесь:</legend>
-            <ul class="recall-form__list">
-              <li class="recall-form__item">
-                <label class="recall-form__label" for="user-name"
+        <form class="page-form" action="https://echo.htmlacademy.ru">
+          <fieldset class="form-group form-group_users">
+            <legend class="form-group__title">Представьтесь:</legend>
+            <ul class="form-group__list">
+              <li class="form-group__item">
+                <label class="form-group__label" for="user-name"
                   >Имя<sup>*</sup>:</label
                 >
-                <input
+                <input class="form-group__input form-group__input_users"
                   type="text"
                   id="user-name"
                   name="user-name"
@@ -62,11 +62,11 @@
                   required
                 />
               </li>
-              <li class="recall-form__item">
-                <label class="recall-form__label" for="user-surname"
+              <li class="form-group__item">
+                <label class="form-group__label" for="user-surname"
                   >Фамилия<sup>*</sup>:</label
                 >
-                <input
+                <input class="form-group__input form-group__input_users"
                   type="text"
                   id="user-surname"
                   name="user-surname"
@@ -74,11 +74,11 @@
                   required
                 />
               </li>
-              <li class="recall-form__item">
-                <label class="recall-form__label" for="user-patronymic"
+              <li class="form-group__item">
+                <label class="form-group__label" for="user-patronymic"
                   >Отчество:</label
                 >
-                <input
+                <input class="form-group__input form-group__input_users"
                   type="text"
                   id="user-patronymic"
                   name="user-patronymic"
@@ -89,15 +89,15 @@
           </fieldset>
 
           <fieldset
-            class="recall-form__fieldset recall-form__fieldset_contacts"
+            class="form-group form-group_contacts"
           >
-            <legend class="recall-form__title">Контактная информация:</legend>
-            <ul class="recall-form__list">
-              <li class="recall-form__item">
-                <label class="recall-form__label" for="user-phone"
+            <legend class="form-group__title">Контактная информация:</legend>
+            <ul class="form-group__list">
+              <li class="form-group__item">
+                <label class="form-group__label" for="user-phone"
                   >Контактный телефон<sup>*</sup>:</label
                 >
-                <input
+                <input class="form-group__input form-group__input_contacts"
                   type="tel"
                   id="user-phone"
                   name="user-phone"
@@ -105,11 +105,11 @@
                   required
                 />
               </li>
-              <li class="recall-form__item">
-                <label class="recall-form__label" for="user-email"
+              <li class="form-group__item">
+                <label class="form-group__label" for="user-email"
                   >Электронная почта<sup>*</sup>:</label
                 >
-                <input
+                <input class="form-group__input form-group__input_contacts"
                   type="email"
                   id="user-email"
                   name="user-email"
@@ -121,15 +121,15 @@
           </fieldset>
 
           <fieldset
-            class="recall-form__fieldset recall-form__fieldset_impression"
+            class="form-group form-group_impression"
           >
-            <legend class="recall-form__title">Ваше общее впечатление:</legend>
-            <ul class="recall-form__list">
-              <li class="recall-form__item">
-                <label class="recall-form__label" for="positive"
+            <legend class="form-group__title">Ваше общее впечатление:</legend>
+            <ul class="form-group__list">
+              <li class="form-group__item">
+                <label class="form-group__label" for="positive"
                   >Скорее положительное</label
                 >
-                <input
+                <input class="form-group__input form-group__input_impression"
                   type="radio"
                   id="positive"
                   name="impression"
@@ -137,22 +137,22 @@
                   checked
                 />
               </li>
-              <li class="recall-form__item">
-                <label class="recall-form__label" for="negative"
+              <li class="form-group__item">
+                <label class="form-group__label" for="negative"
                   >Скорее отрицательное</label
                 >
-                <input
+                <input class="form-group__input form-group__input_impression"
                   type="radio"
                   id="negative"
                   name="impression"
                   value="Скорее отрицательное"
                 />
               </li>
-              <li class="recall-form__item">
-                <label class="recall-form__label" for="no-answer"
+              <li class="form-group__item">
+                <label class="form-group__label" for="no-answer"
                   >Затрудняюсь ответить</label
                 >
-                <input
+                <input class="form-group__input form-group__input_impression"
                   type="radio"
                   id="no-answer"
                   name="impression"
@@ -162,53 +162,53 @@
             </ul>
           </fieldset>
 
-          <fieldset class="recall-form__fieldset recall-form__fieldset_places">
-            <legend class="recall-form__title">
+          <fieldset class="form-group form-group_places">
+            <legend class="form-group__title">
               Посещенные достопримечательности:
             </legend>
-            <ul class="recall-form__list">
-              <li class="recall-form__item">
-                <label class="recall-form__label" for="bridge"
+            <ul class="form-group__list">
+              <li class="form-group__item">
+                <label class="form-group__label" for="bridge"
                   >Мост Дьявола</label
                 >
-                <input
+                <input class="form-group__input form-group__input_places"
                   type="checkbox"
                   id="bridge"
-                  name="birdge[]"
+                  name="attractions[]"
                   value="Мост Дьявола"
                   checked
                 />
               </li>
-              <li class="recall-form__item">
-                <label class="recall-form__label" for="mountain"
+              <li class="form-group__item">
+                <label class="form-group__label" for="mountain"
                   >Гора-Колокол</label
                 >
-                <input
+                <input class="form-group__input form-group__input_places"
                   type="checkbox"
                   id="mountain"
-                  name="mountain[]"
+                  name="attractions[]"
                   value="Гора-Колокол"
                   checked
                 />
               </li>
-              <li class="recall-form__item">
-                <label class="recall-form__label" for="park">Слайд-парк</label>
-                <input
+              <li class="form-group__item">
+                <label class="form-group__label" for="park">Слайд-парк</label>
+                <input class="form-group__input form-group__input_places"
                   type="checkbox"
                   id="park"
-                  name="park[]"
+                  name="attractions[]"
                   value="Слайд-парк"
                   checked
                 />
               </li>
-              <li class="recall-form__item">
-                <label class="recall-form__label" for="rocks"
+              <li class="form-group__item">
+                <label class="form-group__label" for="rocks"
                   >Красные скалы</label
                 >
-                <input
+                <input class="form-group__input form-group__input_places"
                   type="checkbox"
                   id="rocks"
-                  name="rocks"
+                  name="attractions[]"
                   value="Красные скалы"
                 />
               </li>
@@ -216,9 +216,9 @@
           </fieldset>
 
           <fieldset
-            class="recall-form__fieldset recall-form__fieldset_emotions"
+            class="form-group form-group_emotions"
           >
-            <legend class="recall-form__title">Опишите свои эмоции:</legend>
+            <legend class="form-group__title">Опишите свои эмоции:</legend>
             <textarea
               name="emotions"
               id="user-emotions"
@@ -226,11 +226,11 @@
             ></textarea>
           </fieldset>
 
-          <div class="recall-form__footer">
-            <button class="recall-form__button button" type="submit">
+          <div class="form-group__footer">
+            <button class="form-group__button button" type="submit">
               Отправить отзыв
             </button>
-            <p class="recall-form__footnotes">
+            <p class="form-group__footnotes">
               <sup>*</sup>- Обязательные поля
             </p>
           </div>
@@ -242,7 +242,7 @@
             Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее
             время мы опубликуем его на сайте.
           </p>
-          <div class="page-popup_gray-box">
+          <div class="page-popup_close-block">
             <button class="page-popup__button button" type="reset">
               Закрыть окно
             </button>
