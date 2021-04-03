@@ -1,0 +1,26 @@
+.advantages-box {
+  padding-top: 35px;
+  color: $light-content-color;
+  text-align: center;
+}
+
+.advantages-box__inner-wrapper {
+  padding: 0 20px;
+}
+
+.advantages-box__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.advantages-box__number,
+.advantages-box__description {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.advantages-box__image {
+  display: block;
+  width: 100%;
+}

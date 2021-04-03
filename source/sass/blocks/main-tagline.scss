@@ -1,0 +1,23 @@
+.main-tagline {
+  padding: 35px 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main-tagline__inner-wrapper {
+  margin: 0 auto;
+  max-width: 543px;
+  min-width: 285px;
+}
+
+.main-tagline__title {
+  margin: 0;
+  line-height: 26px;
+  font-size: 18px;
+}
+
+.main-tagline__description {
+  margin: 40px 0 0;
+  font-size: 14px;
+  line-height: 26px;
+}

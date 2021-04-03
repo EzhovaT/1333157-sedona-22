@@ -1,0 +1,13 @@
+.main-slogan {
+  padding: 90px 20px 85px;
+  background-color: $main-page-color;
+  background-image: url("../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-slogan__picture {
+  width: 100%;
+  object-fit: contain;
+}
