@@ -1,6 +1,18 @@
+.footer-copyright {
+  min-width: 151px;
+}
+
 .footer-copyright__link {
+  position: relative;
+  padding-left: 5px;
   font-size: 14px;
   line-height: 26px;
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: $main-content-color;
+
+  &::before {
+    content: url("../img/htmlacademy.svg");
+    position: absolute;
+    right: -40px;
+  }
 }

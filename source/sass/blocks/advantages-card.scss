@@ -1,52 +1,39 @@
 .advantages-card {
   position: relative;
-  margin-bottom: 29px;
   max-width: 190px;
+  padding: 30px 0 0;
+}
+
+.advantages-card__wrapper {
   margin-left: 60px;
 }
 
-.advantages-card_gray {
-  padding-bottom: 24px;
-  text-align: center;
-  min-width: 280px;
-  margin-left: auto;
-  margin-right: auto;
-
-  &:not(:last-child) {
-    border-bottom: 1px solid rgb(214, 214, 214);
-  }
-}
-
-.advantages-card_house {
+.advantages-card_icon_house,
+.advantages-card_icon_present,
+.advantages-card_icon_food {
   &::before {
-    content: url("../../img/icon-house.svg");
     width: 39px;
     height: 37px;
     position: absolute;
-    left: -50px;
-    top: -12px;
+    top: 20px;
   }
 }
 
-.advantages-card_present {
+.advantages-card_icon_house {
   &::before {
-    content: url("../../img/icon-gift.svg");
-    width: 39px;
-    height: 37px;
-    position: absolute;
-    left: -48px;
-    top: -12px;
+    content: url("../img/icon-house.svg");
   }
 }
 
-.advantages-card_food {
+.advantages-card_icon_present {
   &::before {
-    content: url("../../img/icon-burger.svg");
-    width: 39px;
-    height: 37px;
-    position: absolute;
-    left: -48px;
-    top: -12px;
+    content: url("../img/icon-gift.svg");
+  }
+}
+
+.advantages-card_icon_food {
+  &::before {
+    content: url("../img/icon-burger.svg");
   }
 }
 
@@ -59,8 +46,7 @@
 
 .advantages-card__description,
 .advantages-card__number {
-  margin-top: 24px;
-  margin-bottom: 0;
+  margin: 24px 0 0;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;

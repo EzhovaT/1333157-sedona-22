@@ -1,17 +1,13 @@
 .main-slogan {
-  padding-top: 90px;
-  padding-bottom: 85px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 90px 20px 85px;
   background-color: $main-page-color;
-  background-image: url("../../img/back-mobile.jpg");
+  background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .main-slogan__picture {
-  height: 100vh;
   width: 100%;
   object-fit: contain;
 }

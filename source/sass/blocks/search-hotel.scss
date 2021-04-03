@@ -1,5 +1,5 @@
 .search-hotel {
-  padding: 0 20px;
+  padding: 30px 20px 0;
   margin: 0;
   text-transform: uppercase;
   text-align: center;
@@ -13,18 +13,19 @@
 }
 
 .search-hotel__description {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 0;
+  padding: 40px 0;
   font-size: 14px;
   line-height: 24px;
 }
 
 .search-hotel__button {
+  display: block;
   padding: 14px 32px;
   text-decoration: none;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  color: rgb(255, 255, 255);
+  color: $light-content-color;
   background-color: $main-page-color;
 }

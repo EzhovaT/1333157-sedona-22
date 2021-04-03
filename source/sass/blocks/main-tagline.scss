@@ -1,10 +1,13 @@
 .main-tagline {
-  max-width: 543px;
-  min-width: 285px;
-  padding: 0 20px;
-  margin: auto;
+  padding: 35px 20px 0;
   text-align: center;
   text-transform: uppercase;
+}
+
+.main-tagline__inner-wrapper {
+  margin: 0 auto;
+  max-width: 543px;
+  min-width: 285px;
 }
 
 .main-tagline__title {
@@ -14,8 +17,7 @@
 }
 
 .main-tagline__description {
-  margin-top: 40px;
-  margin-bottom: 0;
+  margin: 40px 0 0;
   font-size: 14px;
   line-height: 26px;
 }

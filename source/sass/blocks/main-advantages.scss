@@ -1,45 +1,18 @@
-.main-advantages__wrapper {
-  padding: 0 20px;
-}
-
 .main-advantages__list {
+  list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
 .main-advantages__item {
   background-color: $main-page-color;
-  list-style-type: none;
-  padding-top: 39px;
   text-transform: uppercase;
 }
 
-.main-advantages__info-box {
-  padding-bottom: 35px;
-  color: rgb(255, 255, 255);
-  text-align: center;
-}
-
 .main-advantages__cards {
-  background-color: rgb(255, 255, 255);
-}
-
-.main-advantages__item_gray {
-  background-color: rgb(238, 238, 238);
-}
-
-.main-advantages__title {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
-}
-
-.main-advantages__number,
-.main-advantages__description {
-  font-size: 14px;
-  line-height: 21px;
-}
-
-.main-advantages__image {
-  width: 100%;
+  background-color: $light-content-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px 40px;
 }
