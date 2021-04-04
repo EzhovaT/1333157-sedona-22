@@ -1,0 +1,38 @@
+.impression-form__input {
+  display: none;
+}
+
+.impression-form__label {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.impression-form__input-decor {
+  display: block;
+  position: relative;
+  margin-right: 26px;
+  width: 48px;
+  height: 48px;
+  background-color: $input-bg-color;
+  border-radius: 50%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-color: $main-content-color;
+    top: 15px;
+    left: 15px;
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+
+.impression-form__input:checked + .impression-form__input-decor::before {
+  opacity: 1;
+}

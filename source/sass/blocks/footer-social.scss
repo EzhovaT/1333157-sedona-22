@@ -15,12 +15,9 @@
   display: block;
   width: 47px;
   height: 48px;
+  font-size: 0;
   background-color: $main-page-color;
-}
 
-.footer-social__link_twitter,
-.footer-social__link_facebook,
-.footer-social__link_youtube {
   &::before {
     position: absolute;
     top: 14px;

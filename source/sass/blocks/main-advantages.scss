@@ -1,3 +1,7 @@
+.main-advantages {
+  width: 100%;
+}
+
 .main-advantages__list {
   list-style-type: none;
   padding: 0;
@@ -9,10 +13,19 @@
   text-transform: uppercase;
 }
 
-.main-advantages__cards {
-  background-color: $light-content-color;
+.main-advantages__cards,
+.main-advantages__tourist-feature {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0 20px 40px;
+}
+
+.main-advantages__cards {
+  background-color: $light-content-color;
+  margin-left: 60px;
+}
+
+.main-advantages__tourist-feature {
+  background-color: $special-page-color;
 }
