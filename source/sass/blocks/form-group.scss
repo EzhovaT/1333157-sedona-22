@@ -1,52 +1,31 @@
 .form-group {
   border: none;
-  padding: 0 20px;
+  border-top: 1px solid $form-border-color;
+  padding: 20px 20px 0;
 }
 
 .form-group__list {
   list-style-type: none;
-  padding: 0;
+  padding: 20px 0 0;
   margin: 0;
 }
 
 .form-group__title {
+  width: 100%;
+  position: absolute;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
+  text-align: center;
   text-transform: uppercase;
   margin: 0 auto;
-}
-
-.form-group__item {
-  padding-top: 20px;
-}
-
-.form-group__label {
-  font-size: 14px;
-  line-height: 26px;
-  color: $input-name-color;
-  text-transform: uppercase;
-}
-
-.form-group__input {
-  padding: 20px 22px;
-  width: 100%;
-  background-color: $input-bg-color;
-  border: none;
-
-  &::placeholder {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 26px;
-    color: $main-content-color;
-  }
 }
 
 .form-group__textarea {
   width: 100%;
   resize: none;
   min-height: 160px;
-  margin-top: 15px;
+  margin-top: 40px;
   padding: 13px 21px;
   border: none;
   background-color: $input-bg-color;

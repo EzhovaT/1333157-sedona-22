@@ -1,12 +1,10 @@
-.page-form__wrapper {
-  margin: 20px 0 25px;
+.page-form {
+  width: 100%;
 }
 
-.page-form__line {
-  margin: 0;
-  border-style: solid;
-  border-bottom: none;
-  color: $form-border-color;
+.page-form__wrapper {
+  margin: 20px 0 25px;
+  padding-top: 20px;
 }
 
 .page-form__footer {

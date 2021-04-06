@@ -1,0 +1,82 @@
+.form-label {
+  font-size: 14px;
+  line-height: 26px;
+  color: $input-name-color;
+  text-transform: uppercase;
+}
+
+.form-label_user {
+  margin-right: 10px;
+}
+
+.form-label_contact {
+  display: block;
+  padding: 0 0 8px 20px;
+}
+
+.form-label_impression,
+.form-label_places {
+  position: relative;
+  display: flex;
+  margin-left: 80px;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.form-label_impression {
+  &::before {
+    content: "";
+    position: absolute;
+    left: -80px;
+    width: 48px;
+    height: 48px;
+    background-color: $input-bg-color;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: -65px;
+    width: 18px;
+    height: 18px;
+    background-color: $main-content-color;
+    top: 5px;
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+
+.form-input:checked + .form-label_impression::after {
+  opacity: 1;
+}
+
+.form-label_places {
+  text-transform: capitalize;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -80px;
+    width: 48px;
+    height: 48px;
+    background-color: $input-bg-color;
+    border-radius: 5px;
+  }
+
+  &::after {
+    content: url("../img/tick.svg");
+    position: absolute;
+    width: 23px;
+    height: 16px;
+    left: -68px;
+    top: 5px;
+    opacity: 0;
+  }
+}
+
+.form-input_places:checked + .form-label_places::after {
+  opacity: 1;
+}
