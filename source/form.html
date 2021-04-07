@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page__body">
     <div class="page-wrapper">
@@ -57,11 +57,9 @@
         <form class="page-form" action="https://echo.htmlacademy.ru">
           <fieldset class="form-group page-form__wrapper">
             <legend class="form-group__title">Представьтесь:</legend>
-            <ul class="form-group__list">
-              <li class="form-field form-field_user">
-                <label
-                  class="form-label form-label_user"
-                  for="user-name"
+            <ul class="form-field">
+              <li class="form-field__item form-field__item_user">
+                <label class="form-field__label" for="user-name"
                   >Имя<sup>*</sup>:</label
                 >
                 <input
@@ -73,10 +71,8 @@
                   required
                 />
               </li>
-              <li class="form-field form-field_user">
-                <label
-                  class="form-label form-label_user"
-                  for="user-surname"
+              <li class="form-field__item form-field__item_user">
+                <label class="form-field__label" for="user-surname"
                   >Фамилия<sup>*</sup>:</label
                 >
                 <input
@@ -88,10 +84,8 @@
                   required
                 />
               </li>
-              <li class="form-field form-field_user">
-                <label
-                  class="form-label form-label_user"
-                  for="user-patronymic"
+              <li class="form-field__item form-field__item_user">
+                <label class="form-field__label" for="user-patronymic"
                   >Отчество:</label
                 >
                 <input
@@ -107,15 +101,15 @@
 
           <fieldset class="form-group page-form__wrapper">
             <legend class="form-group__title">Контактная информация:</legend>
-            <ul class="form-group__list contact-form">
-              <li class="form-field">
+            <ul class="form-field">
+              <li class="form-field__item">
                 <label
-                  class="form-label form-label_contact"
+                  class="form-field__label form-field__label-contact"
                   for="user-phone"
                   >Контактный телефон<sup>*</sup>:</label
                 >
                 <input
-                  class="form-input form-input_contact form-input_icon_phone"
+                  class="form-input form-input_icon_phone"
                   type="tel"
                   id="user-phone"
                   name="user-phone"
@@ -123,14 +117,14 @@
                   required
                 />
               </li>
-              <li class="form-field">
+              <li class="form-field__item">
                 <label
-                  class="form-label form-label_contact"
+                  class="form-field__label form-field__label-contact"
                   for="user-email"
                   >Электронная почта<sup>*</sup>:</label
                 >
                 <input
-                  class="form-input form-input_contact  form-input_icon_email"
+                  class="form-input form-input_icon_email"
                   type="email"
                   id="user-email"
                   name="user-email"
@@ -143,49 +137,49 @@
 
           <fieldset class="form-group page-form__wrapper">
             <legend class="form-group__title">Ваше общее впечатление:</legend>
-            <ul class="form-group__list">
-              <li class="form-field form-field_selection">
+            <ul class="form-field">
+              <li class="form-field__item">
                 <input
-                    class="form-input form-input_impression"
-                    type="radio"
-                    id="positive"
-                    name="impression"
-                    value="Скорее положительное"
-                    checked
-                  />
+                  class="form-radio"
+                  type="radio"
+                  id="positive"
+                  name="impression"
+                  value="Скорее положительное"
+                  checked
+                />
                 <label
-                  class="form-label form-label_impression"
+                  class="form-field__label form-field__label_type-radio"
                   for="positive"
                 >
-                Скорее положительное
+                  Скорее положительное
                 </label>
               </li>
-              <li class="form-field form-field_selection">
+              <li class="form-field__item">
                 <input
-                class="form-input form-input_impression"
-                type="radio"
-                id="negative"
-                name="impression"
-                value="Скорее отрицательное"
-              />
+                  class="form-radio"
+                  type="radio"
+                  id="negative"
+                  name="impression"
+                  value="Скорее отрицательное"
+                />
                 <label
-                  class="form-label form-label_impression"
+                  class="form-field__label form-field__label_type-radio"
                   for="negative"
-                >Скорее отрицательное
+                  >Скорее отрицательное
                 </label>
               </li>
-              <li class="form-field form-field_selection">
+              <li class="form-field__item">
                 <input
-                    class="form-input form-input_impression"
-                    type="radio"
-                    id="no-answer"
-                    name="impression"
-                    value="Затрудняюсь ответить"
-                  />
+                  class="form-radio"
+                  type="radio"
+                  id="no-answer"
+                  name="impression"
+                  value="Затрудняюсь ответить"
+                />
                 <label
-                  class="form-label form-label_impression"
+                  class="form-field__label form-field__label_type-radio"
                   for="no-answer"
-                >Затрудняюсь ответить
+                  >Затрудняюсь ответить
                 </label>
               </li>
             </ul>
@@ -195,65 +189,67 @@
             <legend class="form-group__title">
               Посещенные достопримечательности:
             </legend>
-            <ul class="form-group__list">
-              <li class="form-field form-field_selection">
-
+            <ul class="form-field">
+              <li class="form-field__item">
                 <input
-                    class="form-input form-input_places"
-                    type="checkbox"
-                    id="bridge"
-                    name="attractions[]"
-                    value="Мост Дьявола"
-                    checked
-                  />
-                  <label
-                  class="form-label form-label_places"
+                  class="form-checkbox"
+                  type="checkbox"
+                  id="bridge"
+                  name="attractions[]"
+                  value="Мост Дьявола"
+                  checked
+                />
+                <label
+                  class="form-field__label form-field__label_type-checkbox"
                   for="bridge"
-                >Мост Дьявола
+                  >Мост Дьявола
                 </label>
               </li>
-              <li class="form-field form-field_selection">
-
+              <li class="form-field__item">
                 <input
-                    class="form-input form-input_places"
-                    type="checkbox"
-                    id="mountain"
-                    name="attractions[]"
-                    value="Гора-Колокол"
-                    checked
-                  />
-                  <label
-                  class="form-label form-label_places"
+                  class="form-checkbox"
+                  type="checkbox"
+                  id="mountain"
+                  name="attractions[]"
+                  value="Гора-Колокол"
+                  checked
+                />
+                <label
+                  class="form-field__label form-field__label_type-checkbox"
                   for="mountain"
-                >Гора-Колокол
+                  >Гора-Колокол
                 </label>
               </li>
-              <li class="form-field form-field_selection">
-
+              <li class="form-field__item">
                 <input
-                    class="form-input form-input_places"
-                    type="checkbox"
-                    id="park"
-                    name="attractions[]"
-                    value="Слайд-парк"
-                    checked
-                  />
-                  <label class="form-label form-label_places" for="park">
-                    Слайд-парк
-                  </label>
+                  class="form-checkbox"
+                  type="checkbox"
+                  id="park"
+                  name="attractions[]"
+                  value="Слайд-парк"
+                  checked
+                />
+                <label
+                  class="form-field__label form-field__label_type-checkbox"
+                  for="park"
+                >
+                  Слайд-парк
+                </label>
               </li>
-              <li class="form-field form-field_selection">
-
+              <li class="form-field__item">
                 <input
-                    class="form-input form-input_places"
-                    type="checkbox"
-                    id="rocks"
-                    name="attractions[]"
-                    value="Красные скалы"
-                  />
-                  <label class="form-label form-label_places" for="rocks">
-                    Красные скалы
-                  </label>
+                  class="form-checkbox"
+                  type="checkbox"
+                  id="rocks"
+                  name="attractions[]"
+                  value="Красные скалы"
+                />
+                <label
+                  class="form-field__label form-field__label_type-checkbox"
+                  for="rocks"
+                >
+                  Красные скалы
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -269,7 +265,7 @@
           </fieldset>
 
           <div class="page-form__footer">
-            <button class="page-form__button standard-page-button" type="submit">
+            <button class="page-form__button button" type="submit">
               Отправить отзыв
             </button>
             <p class="page-form__footnotes"><sup>*</sup>- Обязательные поля</p>
@@ -283,7 +279,7 @@
             время мы опубликуем его на сайте.
           </p>
           <div class="page-popup__close-block">
-            <button class="page-popup__button standard-page-button" type="reset">
+            <button class="page-popup__button button" type="reset">
               Закрыть окно
             </button>
           </div>
@@ -295,9 +291,7 @@
             Проверьте поля, выделенные красным, скорее всего вы забыли их
             заполнить
           </p>
-          <button class="page-popup__button standard-page-button" type="button">
-            Ок
-          </button>
+          <button class="page-popup__button button" type="button">Ок</button>
         </div>
       </main>
 

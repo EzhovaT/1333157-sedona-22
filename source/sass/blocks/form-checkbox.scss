@@ -1,0 +1,7 @@
+.form-checkbox {
+  display: none;
+}
+
+.form-checkbox:checked + .form-field__label_type-checkbox::after {
+  opacity: 1;
+}
