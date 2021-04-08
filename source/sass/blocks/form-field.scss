@@ -28,3 +28,51 @@
   color: $input-name-color;
   text-transform: uppercase;
 }
+
+.form-field__radio-input,
+.form-field__checkbox-input {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    width: 48px;
+    height: 48px;
+    background-color: $input-bg-color;
+  }
+
+  &::after {
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    opacity: 0;
+  }
+}
+
+.form-field__radio-input {
+  &::before {
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-color: $main-content-color;
+    border-radius: 50%;
+  }
+}
+
+.form-field__checkbox-input {
+  &::before {
+    border-radius: 5px;
+  }
+
+  &::after {
+    content: url("../img/tick.svg");
+    width: 23px;
+    height: 16px;
+  }
+}
