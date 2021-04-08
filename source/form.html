@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <div class="page-wrapper">
@@ -55,213 +55,213 @@
         </div>
 
         <form class="page-form" action="https://echo.htmlacademy.ru">
-          <fieldset class="form-group page-form__wrapper">
-            <legend class="form-group__title">Представьтесь:</legend>
-            <ul class="form-field">
-              <li class="form-field__item form-field__item_user">
+          <fieldset class="form-group">
+            <legend class="visually-hidden">Представьтесь:</legend>
+            <div class="form-group__field">
+              <h3 class="form-group__title">Представьтесь:</h3>
+              <div class="form-field">
                 <label class="form-field__label" for="user-name"
                   >Имя<sup>*</sup>:</label
                 >
                 <input
-                  class="form-input"
+                  class="text-field"
                   type="text"
                   id="user-name"
                   name="user-name"
                   placeholder="Петр"
                   required
                 />
-              </li>
-              <li class="form-field__item form-field__item_user">
+              </div>
+              <div class="form-field">
                 <label class="form-field__label" for="user-surname"
                   >Фамилия<sup>*</sup>:</label
                 >
                 <input
-                  class="form-input"
+                  class="text-field"
                   type="text"
                   id="user-surname"
                   name="user-surname"
                   placeholder="Иванов"
                   required
                 />
-              </li>
-              <li class="form-field__item form-field__item_user">
+              </div>
+              <div class="form-field">
                 <label class="form-field__label" for="user-patronymic"
                   >Отчество:</label
                 >
                 <input
-                  class="form-input"
+                  class="text-field"
                   type="text"
                   id="user-patronymic"
                   name="user-patronymic"
                   placeholder="Александрович"
                 />
-              </li>
-            </ul>
+              </div>
+            </div>
           </fieldset>
 
-          <fieldset class="form-group page-form__wrapper">
-            <legend class="form-group__title">Контактная информация:</legend>
-            <ul class="form-field">
-              <li class="form-field__item">
-                <label
-                  class="form-field__label form-field__label-contact"
-                  for="user-phone"
+          <fieldset class="form-group">
+            <legend class="visually-hidden">Контактная информация:</legend>
+            <div class="form-group__field">
+              <h3 class="form-group__title">Контактная информация:</h3>
+              <div class="form-field form-field_direction_vertical">
+                <label class="form-field__label" for="user-phone"
                   >Контактный телефон<sup>*</sup>:</label
                 >
                 <input
-                  class="form-input form-input_icon_phone"
+                  class="text-field text-field_icon_phone"
                   type="tel"
                   id="user-phone"
                   name="user-phone"
                   placeholder="Введите телефон"
                   required
                 />
-              </li>
-              <li class="form-field__item">
-                <label
-                  class="form-field__label form-field__label-contact"
-                  for="user-email"
+              </div>
+              <div class="form-field form-field_direction_vertical">
+                <label class="form-field__label" for="user-email"
                   >Электронная почта<sup>*</sup>:</label
                 >
                 <input
-                  class="form-input form-input_icon_email"
+                  class="text-field text-field_icon_email"
                   type="email"
                   id="user-email"
                   name="user-email"
                   placeholder="Введите e-mail"
                   required
                 />
-              </li>
-            </ul>
+              </div>
+            </div>
           </fieldset>
 
-          <fieldset class="form-group page-form__wrapper">
-            <legend class="form-group__title">Ваше общее впечатление:</legend>
-            <ul class="form-field">
-              <li class="form-field__item">
-                <input
-                  class="form-radio"
-                  type="radio"
-                  id="positive"
-                  name="impression"
-                  value="Скорее положительное"
-                  checked
-                />
-                <label
-                  class="form-field__label form-field__label_type-radio"
-                  for="positive"
-                >
+          <fieldset class="form-group">
+            <legend class="visually-hidden">Ваше общее впечатление:</legend>
+            <div class="form-group__field">
+              <h3 class="form-group__title">Ваше общее впечатление:</h3>
+              <div class="form-field form-field_direction_horizon">
+                <div class="radio-field">
+                  <input
+                    class="radio-field__input"
+                    type="radio"
+                    id="positive"
+                    name="impression"
+                    value="Скорее положительное"
+                    checked
+                  />
+                </div>
+                <label class="form-field__label" for="positive">
                   Скорее положительное
                 </label>
-              </li>
-              <li class="form-field__item">
-                <input
-                  class="form-radio"
-                  type="radio"
-                  id="negative"
-                  name="impression"
-                  value="Скорее отрицательное"
-                />
-                <label
-                  class="form-field__label form-field__label_type-radio"
-                  for="negative"
+              </div>
+              <div class="form-field form-field_direction_horizon">
+                <div class="radio-field">
+                  <input
+                    class="radio-field__input"
+                    type="radio"
+                    id="negative"
+                    name="impression"
+                    value="Скорее отрицательное"
+                  />
+                </div>
+                <label class="form-field__label" for="negative"
                   >Скорее отрицательное
                 </label>
-              </li>
-              <li class="form-field__item">
-                <input
-                  class="form-radio"
-                  type="radio"
-                  id="no-answer"
-                  name="impression"
-                  value="Затрудняюсь ответить"
-                />
-                <label
-                  class="form-field__label form-field__label_type-radio"
-                  for="no-answer"
+              </div>
+              <div class="form-field form-field_direction_horizon">
+                <div class="radio-field">
+                  <input
+                    class="radio-field__input"
+                    type="radio"
+                    id="no-answer"
+                    name="impression"
+                    value="Затрудняюсь ответить"
+                  />
+                </div>
+                <label class="form-field__label" for="no-answer"
                   >Затрудняюсь ответить
                 </label>
-              </li>
-            </ul>
+              </div>
+            </div>
           </fieldset>
 
-          <fieldset class="form-group page-form__wrapper">
-            <legend class="form-group__title">
+          <fieldset class="form-group">
+            <legend class="visually-hidden">
               Посещенные достопримечательности:
             </legend>
-            <ul class="form-field">
-              <li class="form-field__item">
-                <input
-                  class="form-checkbox"
-                  type="checkbox"
-                  id="bridge"
-                  name="attractions[]"
-                  value="Мост Дьявола"
-                  checked
-                />
-                <label
-                  class="form-field__label form-field__label_type-checkbox"
-                  for="bridge"
+            <div class="form-group__field">
+              <h3 class="form-group__title">
+                Посещенные достопримечательности:
+              </h3>
+              <div class="form-field form-field_direction_horizon">
+                <div class="checkbox-field">
+                  <input
+                    class="checkbox-field__input"
+                    type="checkbox"
+                    id="bridge"
+                    name="attractions[]"
+                    value="Мост Дьявола"
+                    checked
+                  />
+                </div>
+                <label class="form-field__label" for="bridge"
                   >Мост Дьявола
                 </label>
-              </li>
-              <li class="form-field__item">
-                <input
-                  class="form-checkbox"
-                  type="checkbox"
-                  id="mountain"
-                  name="attractions[]"
-                  value="Гора-Колокол"
-                  checked
-                />
-                <label
-                  class="form-field__label form-field__label_type-checkbox"
-                  for="mountain"
+              </div>
+              <div class="form-field form-field_direction_horizon">
+                <div class="checkbox-field">
+                  <input
+                    class="checkbox-field__input"
+                    type="checkbox"
+                    id="mountain"
+                    name="attractions[]"
+                    value="Гора-Колокол"
+                    checked
+                  />
+                </div>
+                <label class="form-field__label" for="mountain"
                   >Гора-Колокол
                 </label>
-              </li>
-              <li class="form-field__item">
-                <input
-                  class="form-checkbox"
-                  type="checkbox"
-                  id="park"
-                  name="attractions[]"
-                  value="Слайд-парк"
-                  checked
-                />
-                <label
-                  class="form-field__label form-field__label_type-checkbox"
-                  for="park"
-                >
-                  Слайд-парк
-                </label>
-              </li>
-              <li class="form-field__item">
-                <input
-                  class="form-checkbox"
-                  type="checkbox"
-                  id="rocks"
-                  name="attractions[]"
-                  value="Красные скалы"
-                />
-                <label
-                  class="form-field__label form-field__label_type-checkbox"
-                  for="rocks"
-                >
+              </div>
+              <div class="form-field form-field_direction_horizon">
+                <div class="checkbox-field">
+                  <input
+                    class="checkbox-field__input"
+                    type="checkbox"
+                    id="park"
+                    name="attractions[]"
+                    value="Слайд-парк"
+                    checked
+                  />
+                </div>
+                <label class="form-field__label" for="park"> Слайд-парк </label>
+              </div>
+              <div class="form-field form-field_direction_horizon">
+                <div class="checkbox-field">
+                  <input
+                    class="checkbox-field__input"
+                    type="checkbox"
+                    id="rocks"
+                    name="attractions[]"
+                    value="Красные скалы"
+                  />
+                </div>
+                <label class="form-field__label" for="rocks">
                   Красные скалы
                 </label>
-              </li>
-            </ul>
+              </div>
+            </div>
           </fieldset>
 
-          <fieldset class="form-group page-form__wrapper">
-            <legend class="form-group__title">Опишите свои эмоции:</legend>
-            <textarea
-              class="form-group__textarea"
-              name="emotions"
-              id="user-emotions"
-              placeholder="Опишите подробно все свои восторги"
-            ></textarea>
+          <fieldset class="form-group">
+            <legend class="visually-hidden">Опишите свои эмоции:</legend>
+            <div class="form-group__field">
+              <h3 class="form-group__title">Опишите свои эмоции:</h3>
+              <textarea
+                class="form-group__textarea"
+                name="emotions"
+                id="user-emotions"
+                placeholder="Опишите подробно все свои восторги"
+              ></textarea>
+            </div>
           </fieldset>
 
           <div class="page-form__footer">

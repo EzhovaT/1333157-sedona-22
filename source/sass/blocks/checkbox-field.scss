@@ -1,0 +1,27 @@
+.checkbox-field {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    width: 48px;
+    height: 48px;
+    background-color: $input-bg-color;
+    border-radius: 5px;
+  }
+
+  &::after {
+    content: url("../img/tick.svg");
+    position: absolute;
+    width: 23px;
+    height: 16px;
+    top: -10px;
+    left: 15px;
+    opacity: 0;
+  }
+}
+
+.checkbox-field__input {
+  display: none;
+}

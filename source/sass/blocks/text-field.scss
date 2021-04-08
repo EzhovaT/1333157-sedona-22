@@ -1,4 +1,4 @@
-.form-input {
+.text-field {
   padding: 20px 22px;
   width: 100%;
   background-color: $input-bg-color;
@@ -14,10 +14,10 @@
   }
 }
 
-.form-input_icon_phone {
+.text-field_icon_phone {
   background-image: url("../img/phone.svg");
 }
 
-.form-input_icon_email {
+.text-field_icon_email {
   background-image: url("../img/mail.svg");
 }
