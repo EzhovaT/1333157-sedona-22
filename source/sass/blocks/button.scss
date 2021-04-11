@@ -9,4 +9,8 @@
   color: $light-content-color;
   background-color: $main-page-color;
   border: none;
+
+  &:hover {
+    background-color: $main-color-hover;
+  }
 }

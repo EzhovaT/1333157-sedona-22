@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <div class="page-wrapper">
+    <div class="page__wrapper">
       <header class="page-header">
         <nav class="main-nav">
           <ul class="main-nav__list nav-list">
@@ -138,7 +138,6 @@
             <div class="form-group__field">
               <h3 class="form-group__title">Ваше общее впечатление:</h3>
               <div class="form-field form-field_direction_horizon">
-                <div class="form-field__radio-input">
                   <input
                     class="radio-field"
                     type="radio"
@@ -147,13 +146,11 @@
                     value="Скорее положительное"
                     checked
                   />
-                </div>
                 <label class="form-field__label" for="positive">
                   Скорее положительное
                 </label>
               </div>
               <div class="form-field form-field_direction_horizon">
-                <div class="form-field__radio-input">
                   <input
                     class="radio-field"
                     type="radio"
@@ -161,13 +158,11 @@
                     name="impression"
                     value="Скорее отрицательное"
                   />
-                </div>
                 <label class="form-field__label" for="negative"
                   >Скорее отрицательное
                 </label>
               </div>
               <div class="form-field form-field_direction_horizon">
-                <div class="form-field__radio-input">
                   <input
                     class="radio-field"
                     type="radio"
@@ -175,7 +170,6 @@
                     name="impression"
                     value="Затрудняюсь ответить"
                   />
-                </div>
                 <label class="form-field__label" for="no-answer"
                   >Затрудняюсь ответить
                 </label>
@@ -192,7 +186,6 @@
                 Посещенные достопримечательности:
               </h3>
               <div class="form-field form-field_direction_horizon">
-                <div class="form-field__checkbox-input">
                   <input
                     class="checkbox-field"
                     type="checkbox"
@@ -201,13 +194,11 @@
                     value="Мост Дьявола"
                     checked
                   />
-                </div>
                 <label class="form-field__label" for="bridge"
                   >Мост Дьявола
                 </label>
               </div>
               <div class="form-field form-field_direction_horizon">
-                <div class="form-field__checkbox-input">
                   <input
                     class="checkbox-field"
                     type="checkbox"
@@ -216,13 +207,11 @@
                     value="Гора-Колокол"
                     checked
                   />
-                </div>
                 <label class="form-field__label" for="mountain"
                   >Гора-Колокол
                 </label>
               </div>
               <div class="form-field form-field_direction_horizon">
-                <div class="form-field__checkbox-input">
                   <input
                     class="checkbox-field"
                     type="checkbox"
@@ -231,11 +220,9 @@
                     value="Слайд-парк"
                     checked
                   />
-                </div>
                 <label class="form-field__label" for="park"> Слайд-парк </label>
               </div>
               <div class="form-field form-field_direction_horizon">
-                <div class="form-field__checkbox-input">
                   <input
                     class="checkbox-field"
                     type="checkbox"
@@ -243,7 +230,6 @@
                     name="attractions[]"
                     value="Красные скалы"
                   />
-                </div>
                 <label class="form-field__label" for="rocks">
                   Красные скалы
                 </label>
@@ -254,13 +240,15 @@
           <fieldset class="form-group">
             <legend class="visually-hidden">Опишите свои эмоции:</legend>
             <div class="form-group__field">
-              <h3 class="form-group__title">Опишите свои эмоции:</h3>
-              <textarea
-                class="form-group__textarea"
-                name="emotions"
-                id="user-emotions"
-                placeholder="Опишите подробно все свои восторги"
-              ></textarea>
+              <div class="form-field form-field_direction_vertical">
+                <h3 class="form-group__title">Опишите свои эмоции:</h3>
+                <textarea
+                  class="textarea-field"
+                  name="emotions"
+                  id="user-emotions"
+                  placeholder="Опишите подробно все свои восторги"
+                ></textarea>
+              </div>
             </div>
           </fieldset>
 
@@ -310,14 +298,14 @@
               <a
                 class="footer-social__link footer-social__link_facebook"
                 href="https://ru-ru.facebook.com/"
-                >Ссыкла на социальную сеть facebook
+                >Ссылка на социальную сеть facebook
               </a>
             </li>
             <li class="footer-social__item">
               <a
                 class="footer-social__link footer-social__link_youtube"
                 href="https://www.youtube.com/"
-                >Ссыкла на видеохостинг youtube
+                >Ссылка на видеохостинг youtube
               </a>
             </li>
           </ul>
@@ -326,7 +314,7 @@
           <a
             class="footer-copyright__link"
             href="https://htmlacademy.ru/intensive/adaptive"
-            title="Ссыкла на интенсив в HTML Academy"
+            title="Ссылка на интенсив в HTML Academy"
           >
             Разработано
           </a>

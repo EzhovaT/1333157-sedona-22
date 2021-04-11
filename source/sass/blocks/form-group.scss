@@ -1,6 +1,6 @@
 .form-group {
   border: none;
-  border-top: 1px solid $form-border-color;
+  border-top: 1px solid $border-color;
   padding: 0;
   margin: 0;
 }
@@ -17,21 +17,4 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
-}
-
-.form-group__textarea {
-  width: 100%;
-  resize: none;
-  min-height: 160px;
-  margin-top: 40px;
-  padding: 13px 21px;
-  border: none;
-  background-color: $input-bg-color;
-
-  &::placeholder {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 26px;
-    color: $main-content-color;
-  }
 }
