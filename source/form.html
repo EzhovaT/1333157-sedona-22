@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <div class="page-wrapper">
+    <div class="page__wrapper">
       <header class="page-header">
         <nav class="main-nav">
           <ul class="main-nav__list nav-list">
@@ -31,14 +31,21 @@
           </button>
         </nav>
 
-        <a class="main-logo">
+        <a class="main-logo" href="index.html">
           <img src="img/logotype-mobile.svg" alt="Основной логотип сайта" />
         </a>
-
-        <h1 class="page-header__title">Sedona</h1>
       </header>
 
       <main class="page-content">
+        <div class="main-slogan">
+          <h1 class="visually-hidden">Седона. Поиск гостиниц</h1>
+          <img
+            class="main-slogan__picture"
+            src="img/sedona.svg"
+            alt="Приветственное изображение названия города Седоны"
+          />
+        </div>
+
         <div class="main-tagline">
           <h2 class="main-tagline__title">Оставьте свой отзыв</h2>
           <p class="main-tagline__description">
@@ -48,192 +55,208 @@
         </div>
 
         <form class="page-form" action="https://echo.htmlacademy.ru">
-          <fieldset class="form-group form-group_users">
-            <legend class="form-group__title">Представьтесь:</legend>
-            <ul class="form-group__list">
-              <li class="form-group__item">
-                <label class="form-group__label" for="user-name"
+          <fieldset class="form-group">
+            <legend class="visually-hidden">Представьтесь:</legend>
+            <div class="form-group__field">
+              <h3 class="form-group__title">Представьтесь:</h3>
+              <div class="form-field">
+                <label class="form-field__label" for="user-name"
                   >Имя<sup>*</sup>:</label
                 >
-                <input class="form-group__input form-group__input_users"
+                <input
+                  class="text-field"
                   type="text"
                   id="user-name"
                   name="user-name"
                   placeholder="Петр"
                   required
                 />
-              </li>
-              <li class="form-group__item">
-                <label class="form-group__label" for="user-surname"
+              </div>
+              <div class="form-field">
+                <label class="form-field__label" for="user-surname"
                   >Фамилия<sup>*</sup>:</label
                 >
-                <input class="form-group__input form-group__input_users"
+                <input
+                  class="text-field"
                   type="text"
                   id="user-surname"
                   name="user-surname"
                   placeholder="Иванов"
                   required
                 />
-              </li>
-              <li class="form-group__item">
-                <label class="form-group__label" for="user-patronymic"
+              </div>
+              <div class="form-field">
+                <label class="form-field__label" for="user-patronymic"
                   >Отчество:</label
                 >
-                <input class="form-group__input form-group__input_users"
+                <input
+                  class="text-field"
                   type="text"
                   id="user-patronymic"
                   name="user-patronymic"
                   placeholder="Александрович"
                 />
-              </li>
-            </ul>
+              </div>
+            </div>
           </fieldset>
 
-          <fieldset
-            class="form-group form-group_contacts"
-          >
-            <legend class="form-group__title">Контактная информация:</legend>
-            <ul class="form-group__list">
-              <li class="form-group__item">
-                <label class="form-group__label" for="user-phone"
+          <fieldset class="form-group">
+            <legend class="visually-hidden">Контактная информация:</legend>
+            <div class="form-group__field">
+              <h3 class="form-group__title">Контактная информация:</h3>
+              <div class="form-field form-field_direction_vertical">
+                <label class="form-field__label" for="user-phone"
                   >Контактный телефон<sup>*</sup>:</label
                 >
-                <input class="form-group__input form-group__input_contacts"
+                <input
+                  class="text-field text-field_icon_phone"
                   type="tel"
                   id="user-phone"
                   name="user-phone"
                   placeholder="Введите телефон"
                   required
                 />
-              </li>
-              <li class="form-group__item">
-                <label class="form-group__label" for="user-email"
+              </div>
+              <div class="form-field form-field_direction_vertical">
+                <label class="form-field__label" for="user-email"
                   >Электронная почта<sup>*</sup>:</label
                 >
-                <input class="form-group__input form-group__input_contacts"
+                <input
+                  class="text-field text-field_icon_email"
                   type="email"
                   id="user-email"
                   name="user-email"
                   placeholder="Введите e-mail"
                   required
                 />
-              </li>
-            </ul>
+              </div>
+            </div>
           </fieldset>
 
-          <fieldset
-            class="form-group form-group_impression"
-          >
-            <legend class="form-group__title">Ваше общее впечатление:</legend>
-            <ul class="form-group__list">
-              <li class="form-group__item">
-                <label class="form-group__label" for="positive"
-                  >Скорее положительное</label
-                >
-                <input class="form-group__input form-group__input_impression"
-                  type="radio"
-                  id="positive"
-                  name="impression"
-                  value="Скорее положительное"
-                  checked
-                />
-              </li>
-              <li class="form-group__item">
-                <label class="form-group__label" for="negative"
-                  >Скорее отрицательное</label
-                >
-                <input class="form-group__input form-group__input_impression"
-                  type="radio"
-                  id="negative"
-                  name="impression"
-                  value="Скорее отрицательное"
-                />
-              </li>
-              <li class="form-group__item">
-                <label class="form-group__label" for="no-answer"
-                  >Затрудняюсь ответить</label
-                >
-                <input class="form-group__input form-group__input_impression"
-                  type="radio"
-                  id="no-answer"
-                  name="impression"
-                  value="Затрудняюсь ответить"
-                />
-              </li>
-            </ul>
+          <fieldset class="form-group">
+            <legend class="visually-hidden">Ваше общее впечатление:</legend>
+            <div class="form-group__field">
+              <h3 class="form-group__title">Ваше общее впечатление:</h3>
+              <div class="form-field form-field_direction_horizon">
+                  <input
+                    class="radio-field"
+                    type="radio"
+                    id="positive"
+                    name="impression"
+                    value="Скорее положительное"
+                    checked
+                  />
+                <label class="form-field__label" for="positive">
+                  Скорее положительное
+                </label>
+              </div>
+              <div class="form-field form-field_direction_horizon">
+                  <input
+                    class="radio-field"
+                    type="radio"
+                    id="negative"
+                    name="impression"
+                    value="Скорее отрицательное"
+                  />
+                <label class="form-field__label" for="negative"
+                  >Скорее отрицательное
+                </label>
+              </div>
+              <div class="form-field form-field_direction_horizon">
+                  <input
+                    class="radio-field"
+                    type="radio"
+                    id="no-answer"
+                    name="impression"
+                    value="Затрудняюсь ответить"
+                  />
+                <label class="form-field__label" for="no-answer"
+                  >Затрудняюсь ответить
+                </label>
+              </div>
+            </div>
           </fieldset>
 
-          <fieldset class="form-group form-group_places">
-            <legend class="form-group__title">
+          <fieldset class="form-group">
+            <legend class="visually-hidden">
               Посещенные достопримечательности:
             </legend>
-            <ul class="form-group__list">
-              <li class="form-group__item">
-                <label class="form-group__label" for="bridge"
-                  >Мост Дьявола</label
-                >
-                <input class="form-group__input form-group__input_places"
-                  type="checkbox"
-                  id="bridge"
-                  name="attractions[]"
-                  value="Мост Дьявола"
-                  checked
-                />
-              </li>
-              <li class="form-group__item">
-                <label class="form-group__label" for="mountain"
-                  >Гора-Колокол</label
-                >
-                <input class="form-group__input form-group__input_places"
-                  type="checkbox"
-                  id="mountain"
-                  name="attractions[]"
-                  value="Гора-Колокол"
-                  checked
-                />
-              </li>
-              <li class="form-group__item">
-                <label class="form-group__label" for="park">Слайд-парк</label>
-                <input class="form-group__input form-group__input_places"
-                  type="checkbox"
-                  id="park"
-                  name="attractions[]"
-                  value="Слайд-парк"
-                  checked
-                />
-              </li>
-              <li class="form-group__item">
-                <label class="form-group__label" for="rocks"
-                  >Красные скалы</label
-                >
-                <input class="form-group__input form-group__input_places"
-                  type="checkbox"
-                  id="rocks"
-                  name="attractions[]"
-                  value="Красные скалы"
-                />
-              </li>
-            </ul>
+            <div class="form-group__field">
+              <h3 class="form-group__title">
+                Посещенные достопримечательности:
+              </h3>
+              <div class="form-field form-field_direction_horizon">
+                  <input
+                    class="checkbox-field"
+                    type="checkbox"
+                    id="bridge"
+                    name="attractions[]"
+                    value="Мост Дьявола"
+                    checked
+                  />
+                <label class="form-field__label" for="bridge"
+                  >Мост Дьявола
+                </label>
+              </div>
+              <div class="form-field form-field_direction_horizon">
+                  <input
+                    class="checkbox-field"
+                    type="checkbox"
+                    id="mountain"
+                    name="attractions[]"
+                    value="Гора-Колокол"
+                    checked
+                  />
+                <label class="form-field__label" for="mountain"
+                  >Гора-Колокол
+                </label>
+              </div>
+              <div class="form-field form-field_direction_horizon">
+                  <input
+                    class="checkbox-field"
+                    type="checkbox"
+                    id="park"
+                    name="attractions[]"
+                    value="Слайд-парк"
+                    checked
+                  />
+                <label class="form-field__label" for="park"> Слайд-парк </label>
+              </div>
+              <div class="form-field form-field_direction_horizon">
+                  <input
+                    class="checkbox-field"
+                    type="checkbox"
+                    id="rocks"
+                    name="attractions[]"
+                    value="Красные скалы"
+                  />
+                <label class="form-field__label" for="rocks">
+                  Красные скалы
+                </label>
+              </div>
+            </div>
           </fieldset>
 
-          <fieldset
-            class="form-group form-group_emotions"
-          >
-            <legend class="form-group__title">Опишите свои эмоции:</legend>
-            <textarea
-              name="emotions"
-              id="user-emotions"
-              placeholder="Опишите подробно все свои восторги"
-            ></textarea>
+          <fieldset class="form-group">
+            <legend class="visually-hidden">Опишите свои эмоции:</legend>
+            <div class="form-group__field">
+              <div class="form-field form-field_direction_vertical">
+                <h3 class="form-group__title">Опишите свои эмоции:</h3>
+                <textarea
+                  class="textarea-field"
+                  name="emotions"
+                  id="user-emotions"
+                  placeholder="Опишите подробно все свои восторги"
+                ></textarea>
+              </div>
+            </div>
           </fieldset>
 
-          <div class="form-group__footer">
-            <button class="form-group__button button" type="submit">
+          <div class="page-form__footer">
+            <button class="page-form__button button" type="submit">
               Отправить отзыв
             </button>
-            <p class="form-group__footnotes">
-              <sup>*</sup>- Обязательные поля
-            </p>
+            <p class="page-form__footnotes"><sup>*</sup>- Обязательные поля</p>
           </div>
         </form>
 
@@ -243,7 +266,7 @@
             Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее
             время мы опубликуем его на сайте.
           </p>
-          <div class="page-popup_close-block">
+          <div class="page-popup__close-block">
             <button class="page-popup__button button" type="reset">
               Закрыть окно
             </button>
@@ -268,21 +291,21 @@
               <a
                 class="footer-social__link footer-social__link_twitter"
                 href="https://twitter.com/?lang=ru"
-              >
+                >Ссылка на социальную сеть twitter
               </a>
             </li>
             <li class="footer-social__item">
               <a
                 class="footer-social__link footer-social__link_facebook"
                 href="https://ru-ru.facebook.com/"
-              >
+                >Ссылка на социальную сеть facebook
               </a>
             </li>
             <li class="footer-social__item">
               <a
                 class="footer-social__link footer-social__link_youtube"
                 href="https://www.youtube.com/"
-              >
+                >Ссылка на видеохостинг youtube
               </a>
             </li>
           </ul>
@@ -291,6 +314,7 @@
           <a
             class="footer-copyright__link"
             href="https://htmlacademy.ru/intensive/adaptive"
+            title="Ссылка на интенсив в HTML Academy"
           >
             Разработано
           </a>

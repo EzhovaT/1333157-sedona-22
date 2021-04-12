@@ -1,0 +1,30 @@
+.form-field {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.form-field_direction_vertical {
+  display: block;
+
+  .form-field__label {
+    padding: 0 0 8px 20px;
+  }
+}
+
+.form-field_direction_horizon {
+  .form-field__label {
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin: 25px;
+  }
+}
+
+.form-field__label {
+  margin-right: 10px;
+  font-size: 14px;
+  line-height: 26px;
+  color: $input-name-color;
+  text-transform: uppercase;
+}

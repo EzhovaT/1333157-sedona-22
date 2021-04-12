@@ -1,0 +1,35 @@
+.text-field {
+  padding: 20px 22px;
+  width: 100%;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  background-color: $input-bg-color;
+  border: none;
+  background-position: center right 20px;
+  background-repeat: no-repeat;
+
+  &::placeholder {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    color: $main-content-color;
+  }
+
+  &:hover {
+    background-color: $border-color;
+  }
+
+  &:focus {
+    background-color: $light-content-color;
+    outline: 4px solid $border-color;
+  }
+}
+
+.text-field_icon_phone {
+  background-image: url("../img/phone.svg");
+}
+
+.text-field_icon_email {
+  background-image: url("../img/mail.svg");
+}
