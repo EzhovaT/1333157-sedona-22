@@ -1,0 +1,10 @@
+.photo-cards {
+  width: 100%;
+}
+
+.photo-cards__box {
+  padding: 20px;
+  border-top: 1px solid $border-color;
+  display: flex;
+  justify-content: center;
+}

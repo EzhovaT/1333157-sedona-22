@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <div class="page-wrapper">
+    <div class="page__wrapper">
       <header class="page-header">
         <nav class="main-nav">
           <ul class="main-nav__list nav-list">
@@ -34,11 +34,18 @@
         <a class="main-logo" href="index.html">
           <img src="img/logotype-mobile.svg" alt="Основной логотип сайта" />
         </a>
-
-        <h1 class="page-header__title">Sedona</h1>
       </header>
 
       <main class="page-content">
+        <div class="main-slogan">
+          <h1 class="visually-hidden">Седона. Поиск гостиниц</h1>
+          <img
+            class="main-slogan__picture"
+            src="img/sedona.svg"
+            alt="Приветственное изображение названия города Седоны"
+          />
+        </div>
+
         <div class="main-tagline">
           <h2 class="main-tagline__title">Фото и видео</h2>
           <p class="main-tagline__description">
@@ -48,70 +55,88 @@
         </div>
 
         <section class="photo-cards">
-          <div class="user-card">
-            <a class="user-card__picture" href="foto.html">
-              <img
-                src="img/photo-1-mobile.jpg"
-                alt="Фотография пользователя изображающая горизонт"
-              />
-            </a>
-            <div class="user-card__description">
-              <h3 class="user-card__title">Неродные просторы</h3>
-              <p class="user-card__author">Автор фото: Борис</p>
+          <div class="photo-cards__box">
+            <div class="photo-card">
+              <a class="photo-card__picture-link" href="foto.html">
+                <img
+                  class="photo-card__image"
+                  src="img/photo-1-mobile.jpg"
+                  alt="Фотография пользователя изображающая горизонт"
+                />
+              </a>
+              <div class="photo-card__description">
+                <h3 class="photo-card__title">Неродные просторы</h3>
+                <p class="photo-card__author">Автор фото: Борис</p>
+                <p class="photo-card__like">1350</p>
+              </div>
             </div>
-            <p class="user-card__like">1350</p>
           </div>
 
-          <div class="user-card">
-            <a class="user-card__picture" href="foto.html">
-              <img
-                src="img/photo-1-mobile.jpg"
-                alt="Фотография пользователя изображающая местную флору"
-              />
-            </a>
-            <div class="user-card__description">
-              <h3 class="user-card__title">Местная растительность</h3>
-              <p class="user-card__author">Автор фото: Сергей</p>
+          <div class="photo-cards__box">
+            <div class="photo-card">
+              <a class="photo-card__picture-link" href="foto.html">
+                <img
+                  class="photo-card__image"
+                  src="img/photo-2-mobile.jpg"
+                  alt="Фотография пользователя изображающая местную флору"
+                />
+              </a>
+              <div class="photo-card__description">
+                <h3 class="photo-card__title">Местная растительность</h3>
+                <p class="photo-card__author">Автор фото: Сергей</p>
+                <p class="photo-card__like">143</p>
+              </div>
             </div>
-            <p class="user-card__like">143</p>
           </div>
 
-          <div class="user-card">
-            <a class="user-card__picture" href="foto.html">
-              <img
-                src="img/photo-1-mobile.jpg"
-                alt="Фотография пользователя изображающая живописную дорогу"
-              />
-            </a>
-            <div class="user-card__description">
-              <h3 class="user-card__title">Дорога на север</h3>
-              <p class="user-card__author">Автор фото: Петр</p>
+          <div class="photo-cards__box">
+            <div class="photo-card">
+              <a class="photo-card__picture-link" href="foto.html">
+                <img
+                  class="photo-card__image"
+                  src="img/photo-3-mobile.jpg"
+                  alt="Фотография пользователя изображающая живописную дорогу"
+                />
+              </a>
+              <div class="photo-card__description">
+                <h3 class="photo-card__title">Дорога на север</h3>
+                <p class="photo-card__author">Автор фото: Петр</p>
+                <p class="photo-card__like">96</p>
+              </div>
             </div>
-            <p class="user-card__like">96</p>
           </div>
 
-          <div class="user-card">
-            <a class="user-card__picture" href="foto.html">
-              <img
-                src="img/photo-1-mobile.jpg"
-                alt="Фотография пользователя изображающая достопримечательность: Мост Дьявола"
-              />
-            </a>
-            <div class="user-card__description">
-              <h3 class="user-card__title">Мост дьявола</h3>
-              <p class="user-card__author">Автор фото: Антон</p>
+          <div class="photo-cards__box">
+            <div class="photo-card">
+              <a class="photo-card__picture-link" href="foto.html">
+                <img
+                  class="photo-card__image"
+                  src="img/photo-4-mobile.jpg"
+                  alt="Фотография пользователя изображающая достопримечательность: Мост Дьявола"
+                />
+              </a>
+              <div class="photo-card__description">
+                <h3 class="photo-card__title">Мост дьявола</h3>
+                <p class="photo-card__author">Автор фото: Антон</p>
+                <p class="photo-card__like">254</p>
+              </div>
             </div>
-            <p class="user-card__like">254</p>
           </div>
         </section>
 
         <div class="video-presentation">
-          <h2 class="video-presentation__title">Все еще сомневаетесь?</h2>
-          <p class="video-presentation__description">
-            Смотрите видеопрезентацию и скорее за билетами, пока они не
-            подорожали в очередной раз!
-          </p>
-          <div class="video-presentation__player"></div>
+          <div class="video-presentation__wrapper">
+            <h2 class="video-presentation__title">Все еще сомневаетесь?</h2>
+            <p class="video-presentation__description">
+              Смотрите видеопрезентацию и скорее за билетами, пока они не
+              подорожали в очередной раз!
+            </p>
+            <div class="video-presentation__player">
+                <div class="video-player">
+                  <div class="video-player__controls"></div>
+                </div>
+            </div>
+          </div>
         </div>
       </main>
 
@@ -123,21 +148,21 @@
               <a
                 class="footer-social__link footer-social__link_twitter"
                 href="https://twitter.com/?lang=ru"
-              >
+                >Ссылка на социальную сеть twitter
               </a>
             </li>
             <li class="footer-social__item">
               <a
                 class="footer-social__link footer-social__link_facebook"
                 href="https://ru-ru.facebook.com/"
-              >
+                >Ссылка на социальную сеть facebook
               </a>
             </li>
             <li class="footer-social__item">
               <a
                 class="footer-social__link footer-social__link_youtube"
                 href="https://www.youtube.com/"
-              >
+                >Ссылка на видеохостинг youtube
               </a>
             </li>
           </ul>
@@ -146,6 +171,7 @@
           <a
             class="footer-copyright__link"
             href="https://htmlacademy.ru/intensive/adaptive"
+            title="Ссылка на интенсив в HTML Academy"
           >
             Разработано
           </a>
