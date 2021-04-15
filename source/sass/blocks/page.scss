@@ -9,9 +9,11 @@
 .page__body {
   min-height: 100%;
   margin: 0;
+  background-color: $body-color;
 }
 
 .page__wrapper {
   max-width: 1200px;
   margin: 0 auto;
+  background-color: $light-content-color;
 }
