@@ -2,9 +2,14 @@
   width: 100%;
 }
 
-.photo-cards__box {
+.photo-cards__list {
+  padding: 0;
+}
+
+.photo-cards__item {
   padding: 20px;
   border-top: 1px solid $border-color;
   display: flex;
   justify-content: center;
+  list-style-type: none;
 }
