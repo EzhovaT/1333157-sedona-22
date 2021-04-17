@@ -9,6 +9,20 @@
 
   .form-field__label {
     padding: 0 0 8px 20px;
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.form-field__hidden-label {
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 
@@ -16,8 +30,12 @@
   .form-field__label {
     font-weight: bold;
     font-size: 18px;
-    text-transform: capitalize;
+    text-transform: none;
     margin: 25px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 0 0 20px;
+    }
   }
 }
 

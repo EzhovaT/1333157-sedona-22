@@ -11,4 +11,8 @@
     flex-direction: row;
     padding: 0 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 104px;
+  }
 }

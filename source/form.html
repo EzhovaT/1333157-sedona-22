@@ -17,6 +17,7 @@
             <li class="nav-list__item">
               <a class="nav-list__link" href="catalog.html">Фото и видео</a>
             </li>
+            <li class="nav-list__item nav-list__item_spacing"></li>
             <li class="nav-list__item">
               <span class="nav-list__item-content">Форма отзыва</span>
             </li>
@@ -25,12 +26,17 @@
                 >HTML Academy</a
               >
             </li>
-            <li class="nav-list__item main-logo">
-              <a class="main-logo__link" href="index.html">
-                <img src="img/logotype-mobile.svg" alt="Основной логотип сайта" />
-              </a>
-            </li>
           </ul>
+          <div class="main-nav__logo">
+            <a class="main-logo" href="index.html">
+              <img
+                width="100"
+                height="84"
+                src="img/logotype-mobile.svg"
+                alt="Основной логотип сайта"
+              />
+            </a>
+          </div>
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -41,6 +47,7 @@
         <div class="main-slogan">
           <h1 class="visually-hidden">Седона. Поиск гостиниц</h1>
           <img
+            width="230"
             class="main-slogan__picture"
             src="img/sedona.svg"
             alt="Приветственное изображение названия города Седоны"
@@ -103,11 +110,12 @@
 
           <fieldset class="form-group">
             <legend class="visually-hidden">Контактная информация:</legend>
-            <div class="form-group__field">
+            <div class="form-group__field form-group__field_row">
               <h3 class="form-group__title">Контактная информация:</h3>
               <div class="form-field form-field_direction_vertical">
-                <label class="form-field__label" for="user-phone"
-                  >Контактный телефон<sup>*</sup>:</label
+                <label class="form-field__label" for="user-phone">
+                  <span class="form-field__hidden-label">Контактный&nbsp;</span
+                  >телефон<sup>*</sup>:</label
                 >
                 <input
                   class="text-field text-field_icon_phone"
@@ -139,38 +147,38 @@
             <div class="form-group__field">
               <h3 class="form-group__title">Ваше общее впечатление:</h3>
               <div class="form-field form-field_direction_horizon">
-                  <input
-                    class="radio-field"
-                    type="radio"
-                    id="positive"
-                    name="impression"
-                    value="Скорее положительное"
-                    checked
-                  />
+                <input
+                  class="radio-field"
+                  type="radio"
+                  id="positive"
+                  name="impression"
+                  value="Скорее положительное"
+                  checked
+                />
                 <label class="form-field__label" for="positive">
                   Скорее положительное
                 </label>
               </div>
               <div class="form-field form-field_direction_horizon">
-                  <input
-                    class="radio-field"
-                    type="radio"
-                    id="negative"
-                    name="impression"
-                    value="Скорее отрицательное"
-                  />
+                <input
+                  class="radio-field"
+                  type="radio"
+                  id="negative"
+                  name="impression"
+                  value="Скорее отрицательное"
+                />
                 <label class="form-field__label" for="negative"
                   >Скорее отрицательное
                 </label>
               </div>
               <div class="form-field form-field_direction_horizon">
-                  <input
-                    class="radio-field"
-                    type="radio"
-                    id="no-answer"
-                    name="impression"
-                    value="Затрудняюсь ответить"
-                  />
+                <input
+                  class="radio-field"
+                  type="radio"
+                  id="no-answer"
+                  name="impression"
+                  value="Затрудняюсь ответить"
+                />
                 <label class="form-field__label" for="no-answer"
                   >Затрудняюсь ответить
                 </label>
@@ -182,7 +190,7 @@
             <legend class="visually-hidden">
               Посещенные достопримечательности:
             </legend>
-            <div class="form-group__field">
+            <div class="form-group__field form-group__field_column">
               <h3 class="form-group__title">
                 Посещенные достопримечательности:
               </h3>
@@ -195,9 +203,9 @@
                     value="Мост Дьявола"
                     checked
                   />
-                <label class="form-field__label" for="bridge"
-                  >Мост Дьявола
-                </label>
+                  <label class="form-field__label" for="bridge"
+                    >Мост Дьявола
+                  </label>
               </div>
               <div class="form-field form-field_direction_horizon">
                   <input
@@ -208,9 +216,9 @@
                     value="Гора-Колокол"
                     checked
                   />
-                <label class="form-field__label" for="mountain"
-                  >Гора-Колокол
-                </label>
+                  <label class="form-field__label" for="mountain"
+                    >Гора-Колокол
+                  </label>
               </div>
               <div class="form-field form-field_direction_horizon">
                   <input
@@ -221,7 +229,7 @@
                     value="Слайд-парк"
                     checked
                   />
-                <label class="form-field__label" for="park"> Слайд-парк </label>
+                  <label class="form-field__label" for="park"> Слайд-парк </label>
               </div>
               <div class="form-field form-field_direction_horizon">
                   <input
@@ -231,9 +239,9 @@
                     name="attractions[]"
                     value="Красные скалы"
                   />
-                <label class="form-field__label" for="rocks">
-                  Красные скалы
-                </label>
+                  <label class="form-field__label" for="rocks">
+                    Красные скалы
+                  </label>
               </div>
             </div>
           </fieldset>

@@ -26,6 +26,13 @@
   }
 }
 
+.text-field_icon_phone,
+.text-field_icon_email {
+  @media (min-width: $desktop-width) {
+    width: 315px;
+  }
+}
+
 .text-field_icon_phone {
   background-image: url("../img/phone.svg");
 }
