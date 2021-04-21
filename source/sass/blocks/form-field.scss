@@ -7,6 +7,10 @@
 .form-field_direction_vertical {
   display: block;
 
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+
   .form-field__label {
     padding: 0 0 8px 20px;
 
@@ -14,19 +18,13 @@
       padding: 0;
     }
   }
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-  }
-}
-
-.form-field__hidden-label {
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
 }
 
 .form-field_direction_horizon {
+  @media (min-width: $tablet-width) {
+    min-width: 50%;
+  }
+
   .form-field__label {
     font-weight: bold;
     font-size: 18px;
@@ -36,6 +34,12 @@
     @media (min-width: $tablet-width) {
       margin: 0 0 0 20px;
     }
+  }
+}
+
+.form-field__input {
+  .text-field {
+    min-width: 100%;
   }
 }
 

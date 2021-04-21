@@ -1,5 +1,4 @@
 .form-group {
-  border: none;
   border-top: 1px solid $border-color;
   padding: 0;
   margin: 0;
@@ -12,40 +11,6 @@
 
 .form-group__field {
   margin: 20px 20px;
-}
-
-.form-group__field_column {
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 480px;
-    margin: 0 auto;
-
-    & > :first-child {
-      grid-column: 1/3;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(4, 245px);
-    padding: 0 20px;
-    width: 100%;
-
-    & > :first-child {
-      grid-column: 1/5;
-    }
-  }
-}
-
-.form-group__field_row {
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    & > :first-child {
-      grid-column: 1/3;
-    }
-  }
 }
 
 .form-group__title {
