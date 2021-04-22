@@ -9,6 +9,10 @@
 }
 
 .main-slogan__picture {
-  width: 100%;
-  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 460px;
+  }
 }

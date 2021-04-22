@@ -25,9 +25,14 @@
                 >HTML Academy</a
               >
             </li>
-            <li class="nav-list__item main-logo">
-              <a class="main-logo__link" href="index.html">
-                <img src="img/logotype-mobile.svg" alt="Основной логотип сайта" />
+            <li class="nav-list__item nav-list__item_logo">
+              <a class="main-logo" href="index.html">
+                <img
+                  width="100"
+                  height="84"
+                  src="img/logotype-mobile.svg"
+                  alt="Основной логотип сайта"
+                />
               </a>
             </li>
           </ul>
@@ -41,6 +46,7 @@
         <div class="main-slogan">
           <h1 class="visually-hidden">Седона. Поиск гостиниц</h1>
           <img
+            width="230"
             class="main-slogan__picture"
             src="img/sedona.svg"
             alt="Приветственное изображение названия города Седоны"
@@ -55,90 +61,111 @@
           </p>
         </div>
 
-        <form class="page-form" action="https://echo.htmlacademy.ru">
-          <fieldset class="form-group">
+        <form
+          class="page-form layout-form feedback-form"
+          action="https://echo.htmlacademy.ru"
+        >
+          <fieldset
+            class="form-group layout-form__group layout-form__group_user_full-name"
+          >
             <legend class="visually-hidden">Представьтесь:</legend>
+            <h3 class="form-group__title">Представьтесь:</h3>
             <div class="form-group__field">
-              <h3 class="form-group__title">Представьтесь:</h3>
               <div class="form-field">
                 <label class="form-field__label" for="user-name"
                   >Имя<sup>*</sup>:</label
                 >
-                <input
-                  class="text-field"
-                  type="text"
-                  id="user-name"
-                  name="user-name"
-                  placeholder="Петр"
-                  required
-                />
+                <div class="form-field__input">
+                  <input
+                    class="text-field"
+                    type="text"
+                    id="user-name"
+                    name="user-name"
+                    placeholder="Петр"
+                    required
+                  />
+                </div>
               </div>
               <div class="form-field">
                 <label class="form-field__label" for="user-surname"
                   >Фамилия<sup>*</sup>:</label
                 >
-                <input
-                  class="text-field"
-                  type="text"
-                  id="user-surname"
-                  name="user-surname"
-                  placeholder="Иванов"
-                  required
-                />
+                <div class="form-field__input">
+                  <input
+                    class="text-field"
+                    type="text"
+                    id="user-surname"
+                    name="user-surname"
+                    placeholder="Иванов"
+                    required
+                  />
+                </div>
               </div>
               <div class="form-field">
                 <label class="form-field__label" for="user-patronymic"
                   >Отчество:</label
                 >
-                <input
-                  class="text-field"
-                  type="text"
-                  id="user-patronymic"
-                  name="user-patronymic"
-                  placeholder="Александрович"
-                />
+                <div class="form-field__input">
+                  <input
+                    class="text-field"
+                    type="text"
+                    id="user-patronymic"
+                    name="user-patronymic"
+                    placeholder="Александрович"
+                  />
+                </div>
               </div>
             </div>
           </fieldset>
 
-          <fieldset class="form-group">
+          <fieldset
+            class="form-group layout-form__group feedback-form__fieldset"
+          >
             <legend class="visually-hidden">Контактная информация:</legend>
+            <h3 class="form-group__title">Контактная информация:</h3>
             <div class="form-group__field">
-              <h3 class="form-group__title">Контактная информация:</h3>
               <div class="form-field form-field_direction_vertical">
-                <label class="form-field__label" for="user-phone"
-                  >Контактный телефон<sup>*</sup>:</label
+                <label class="form-field__label" for="user-phone">
+                  <span class="feedback-form__label">Контактный&nbsp;</span
+                  >телефон<sup>*</sup>:</label
                 >
-                <input
-                  class="text-field text-field_icon_phone"
-                  type="tel"
-                  id="user-phone"
-                  name="user-phone"
-                  placeholder="Введите телефон"
-                  required
-                />
+                <div class="form-field__input">
+                  <input
+                    class="text-field text-field_icon_phone"
+                    type="tel"
+                    id="user-phone"
+                    name="user-phone"
+                    placeholder="Введите телефон"
+                    required
+                  />
+                </div>
               </div>
               <div class="form-field form-field_direction_vertical">
                 <label class="form-field__label" for="user-email"
                   >Электронная почта<sup>*</sup>:</label
                 >
-                <input
-                  class="text-field text-field_icon_email"
-                  type="email"
-                  id="user-email"
-                  name="user-email"
-                  placeholder="Введите e-mail"
-                  required
-                />
+                <div class="form-field__input">
+                  <input
+                    class="text-field text-field_icon_email"
+                    type="email"
+                    id="user-email"
+                    name="user-email"
+                    placeholder="Введите e-mail"
+                    required
+                  />
+                </div>
               </div>
             </div>
           </fieldset>
 
-          <fieldset class="form-group">
+          <fieldset
+            class="form-group layout-form__group layout-form__group_user_impression"
+          >
             <legend class="visually-hidden">Ваше общее впечатление:</legend>
+            <h3 class="form-group__title">Ваше общее впечатление:</h3>
             <div class="form-group__field">
-              <h3 class="form-group__title">Ваше общее впечатление:</h3>
               <div class="form-field form-field_direction_horizon">
+                <div class="form-field__input">
                   <input
                     class="radio-field"
                     type="radio"
@@ -147,11 +174,13 @@
                     value="Скорее положительное"
                     checked
                   />
+                </div>
                 <label class="form-field__label" for="positive">
                   Скорее положительное
                 </label>
               </div>
               <div class="form-field form-field_direction_horizon">
+                <div class="form-field__input">
                   <input
                     class="radio-field"
                     type="radio"
@@ -159,11 +188,13 @@
                     name="impression"
                     value="Скорее отрицательное"
                   />
+                </div>
                 <label class="form-field__label" for="negative"
                   >Скорее отрицательное
                 </label>
               </div>
               <div class="form-field form-field_direction_horizon">
+                <div class="form-field__input">
                   <input
                     class="radio-field"
                     type="radio"
@@ -171,6 +202,7 @@
                     name="impression"
                     value="Затрудняюсь ответить"
                   />
+                </div>
                 <label class="form-field__label" for="no-answer"
                   >Затрудняюсь ответить
                 </label>
@@ -178,15 +210,16 @@
             </div>
           </fieldset>
 
-          <fieldset class="form-group">
+          <fieldset
+            class="form-group layout-form__group layout-form__group_user_places-visited"
+          >
             <legend class="visually-hidden">
               Посещенные достопримечательности:
             </legend>
+            <h3 class="form-group__title">Посещенные достопримечательности:</h3>
             <div class="form-group__field">
-              <h3 class="form-group__title">
-                Посещенные достопримечательности:
-              </h3>
               <div class="form-field form-field_direction_horizon">
+                <div class="form-field__input">
                   <input
                     class="checkbox-field"
                     type="checkbox"
@@ -195,11 +228,13 @@
                     value="Мост Дьявола"
                     checked
                   />
+                </div>
                 <label class="form-field__label" for="bridge"
                   >Мост Дьявола
                 </label>
               </div>
               <div class="form-field form-field_direction_horizon">
+                <div class="form-field__input">
                   <input
                     class="checkbox-field"
                     type="checkbox"
@@ -208,11 +243,13 @@
                     value="Гора-Колокол"
                     checked
                   />
+                </div>
                 <label class="form-field__label" for="mountain"
                   >Гора-Колокол
                 </label>
               </div>
               <div class="form-field form-field_direction_horizon">
+                <div class="form-field__input">
                   <input
                     class="checkbox-field"
                     type="checkbox"
@@ -221,9 +258,11 @@
                     value="Слайд-парк"
                     checked
                   />
+                </div>
                 <label class="form-field__label" for="park"> Слайд-парк </label>
               </div>
               <div class="form-field form-field_direction_horizon">
+                <div class="form-field__input">
                   <input
                     class="checkbox-field"
                     type="checkbox"
@@ -231,6 +270,7 @@
                     name="attractions[]"
                     value="Красные скалы"
                   />
+                </div>
                 <label class="form-field__label" for="rocks">
                   Красные скалы
                 </label>
@@ -238,10 +278,10 @@
             </div>
           </fieldset>
 
-          <fieldset class="form-group">
+          <fieldset class="form-group layout-form__group">
             <legend class="visually-hidden">Опишите свои эмоции:</legend>
+            <h3 class="form-group__title">Опишите свои эмоции:</h3>
             <div class="form-group__field">
-              <h3 class="form-group__title">Опишите свои эмоции:</h3>
               <div class="form-field form-field_direction_vertical">
                 <textarea
                   class="textarea-field"
@@ -322,5 +362,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/main.js"></script>
   </body>
 </html>

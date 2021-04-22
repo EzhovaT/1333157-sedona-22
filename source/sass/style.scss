@@ -3,7 +3,7 @@
 @import "global/fonts.scss";
 @import "global/global.scss";
 @import "global/variables.scss";
-@import "global/viewports.scss";
+@import "global/breakpoints.scss";
 
 //Blocks
 @import "blocks/page.scss";
@@ -24,6 +24,8 @@
 @import "blocks/footer-social.scss";
 @import "blocks/footer-copyright.scss";
 @import "blocks/page-form.scss";
+@import "blocks/layout-form.scss";
+@import "blocks/feedback-form.scss";
 @import "blocks/form-group.scss";
 @import "blocks/form-field.scss";
 @import "blocks/text-field.scss";
