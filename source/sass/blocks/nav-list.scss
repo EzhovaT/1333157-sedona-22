@@ -26,12 +26,17 @@
     background-color: $main-color-hover;
   }
 
+  &:active {
+    background-color: $main-color-active;
+  }
+
   @media (min-width: $tablet-width) {
     border: none;
     font-size: 14px;
     line-height: 26px;
 
-    &:hover {
+    &:hover,
+    &:active {
       background-color: transparent;
     }
   }
@@ -51,15 +56,6 @@
   }
 }
 
-.nav-list__item_close {
-  display: none;
-}
-
-.nav-list__item_spacing {
-  padding: 0;
-  border: none;
-}
-
 .nav-list__link,
 .nav-list__item-content {
   display: block;
@@ -68,7 +64,36 @@
   text-decoration: none;
   color: $light-content-color;
 
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.nav-list__link {
   @media (min-width: $tablet-width) {
     color: $main-content-color;
+
+    &:hover {
+      color: $main-page-color;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.nav-list__item-content {
+  @media (min-width: $tablet-width) {
+    color: #766357;
+    cursor: pointer;
+
+    &:hover {
+      color: #604e43;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

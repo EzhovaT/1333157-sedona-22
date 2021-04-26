@@ -1,13 +1,10 @@
 "use strict";
 
 const btn = document.querySelector(".main-nav__toggle"),
-  links = document.querySelectorAll(".nav-list__item"),
-  logo = document.querySelector(".nav-list__item_logo");
+  nav = document.querySelector(".main-nav");
+
+  nav.classList.remove('main-nav_no-js')
 
 btn.addEventListener("click", () => {
-  for (let link of links) {
-    if (link != logo) {
-      link.classList.toggle("nav-list__item_close");
-    }
-  }
+  nav.classList.toggle("main-nav_closed");
 });
