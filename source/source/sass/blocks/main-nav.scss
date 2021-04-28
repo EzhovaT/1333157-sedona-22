@@ -5,10 +5,22 @@
   position: relative;
 }
 
+// .main-nav_closed .nav-list__item {
+//   display: none;
+// }
+
+// .main-nav_closed .nav-list__item_logo {
+//   display: block;
+// }
+
 .main-nav__list {
   margin: 0;
   padding: 0;
 }
+
+// .main-nav_closed .main-nav__toggle {
+//   background-image: url("../img/icon-menu.svg");
+// }
 
 .main-nav__toggle {
   position: absolute;

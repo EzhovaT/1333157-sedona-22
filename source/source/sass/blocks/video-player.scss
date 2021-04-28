@@ -1,0 +1,27 @@
+.video-player {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: url("../img/video-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    height: 100%;
+  }
+}
+
+.video-player__controls {
+  width: 280px;
+  height: 40px;
+  background-color: $main-content-color;
+  opacity: 0.6;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 93px;
+  }
+}
