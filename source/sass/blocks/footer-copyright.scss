@@ -10,9 +10,16 @@
   text-decoration: none;
   color: $main-content-color;
 
-  &::before {
-    content: url("../img/htmlacademy.svg");
-    position: absolute;
-    right: -40px;
+  &:hover {
+    fill: $main-page-color;
   }
+
+  &:active {
+    fill-opacity: 0.3;
+  }
+}
+
+.footer-copyright__icon {
+  position: absolute;
+  right: -40px;
 }

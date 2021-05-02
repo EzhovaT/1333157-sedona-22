@@ -10,6 +10,10 @@
   }
 }
 
+.advantages-box_position-reverse {
+  flex-direction: row-reverse;
+}
+
 .advantages-box__inner-wrapper {
   padding: 0 20px;
 
@@ -44,6 +48,7 @@
 
 .advantages-box__wrapper-image {
   height: 260px;
+  flex-grow: 1;
 
   @media (min-width: $tablet-width) {
     min-width: 512px;

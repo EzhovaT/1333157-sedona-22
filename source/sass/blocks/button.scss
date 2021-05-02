@@ -13,4 +13,9 @@
   &:hover {
     background-color: $main-color-hover;
   }
+
+  &:active {
+    background-color: $main-color-active;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
