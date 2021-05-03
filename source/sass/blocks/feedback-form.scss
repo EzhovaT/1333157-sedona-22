@@ -1,9 +1,8 @@
-.feedback-form__fieldset {
-  .form-group__field {
-    @media (min-width: $desktop-width) {
-      display: flex;
-      justify-content: space-between;
-    }
+.feedback-form__field {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
   }
 }
 

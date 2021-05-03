@@ -9,30 +9,40 @@
   <body class="page__body">
     <div class="page__wrapper">
       <header class="page-header">
-        <nav class="main-nav">
+        <nav class="main-nav main-nav_nojs main-nav_closed-menu">
           <ul class="main-nav__list nav-list">
-            <li class="nav-list__item">
+            <li class="nav-list__item main-nav__item">
               <a class="nav-list__link" href="index.html">Главная</a>
             </li>
-            <li class="nav-list__item">
+            <li class="nav-list__item main-nav__item">
               <span class="nav-list__item-content">Фото и видео</span>
             </li>
-            <li class="nav-list__item">
+            <li class="nav-list__item main-nav__item">
               <a class="nav-list__link" href="form.html">Форма отзыва</a>
             </li>
-            <li class="nav-list__item">
+            <li class="nav-list__item main-nav__item">
               <a class="nav-list__link" href="https://htmlacademy.ru"
                 >HTML Academy</a
               >
             </li>
-            <li class="nav-list__item nav-list__item_logo">
+            <li class="nav-list__item nav-list__item_logo main-nav__item main-nav__item_logo">
               <a class="main-logo" href="index.html">
-                <img
-                  width="100"
-                  height="84"
-                  src="img/logotype-mobile.svg"
-                  alt="Основной логотип сайта"
-                />
+                <picture class="main-logo__picture">
+                  <source class="main-logo__image"
+                    media="(min-width: 1200px)"
+                    srcset="img/logotype-desktop.svg"
+                  />
+                  <source class="main-logo__image"
+                    media="(min-width: 768px)"
+                    srcset="img/logotype-tablet.svg"
+                  />
+                  <img class="main-logo__image"
+                    width="186"
+                    height="96"
+                    src="img/logotype-mobile.svg"
+                    alt="Основной логотип сайта"
+                  />
+                </picture>
               </a>
             </li>
           </ul>

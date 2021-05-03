@@ -15,4 +15,8 @@
   &:hover {
     background-color: $border-color;
   }
+
+  &:active {
+    background-color: $btn-down-color;
+  }
 }
