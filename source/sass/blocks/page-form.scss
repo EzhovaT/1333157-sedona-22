@@ -2,6 +2,10 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     padding: 0 40px;
   }
 
