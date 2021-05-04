@@ -4,15 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Academy: Седона</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <object class="page__sprite-icons"
-      data="img/footer-icons.svg"
-      type="image/svg+xml"
-    ></object>
-    <object class="page__sprite-icons"
-      data="img/video-player-icons.svg"
+      data="img/sprite-icons.svg"
       type="image/svg+xml"
     ></object>
     <div class="page__wrapper">
@@ -36,11 +34,11 @@
             <li class="nav-list__item nav-list__item_logo main-nav__item main-nav__item_logo">
               <a class="main-logo" href="index.html">
                 <picture class="main-logo__picture">
-                  <source class="main-logo__image"
+                  <source class="main-logo__media-image"
                     media="(min-width: 1200px)"
                     srcset="img/logotype-desktop.svg"
                   />
-                  <source class="main-logo__image"
+                  <source class="main-logo__media-image"
                     media="(min-width: 768px)"
                     srcset="img/logotype-tablet.svg"
                   />
@@ -61,7 +59,7 @@
       </header>
 
       <main class="page-content">
-        <div class="main-slogan">
+        <div class="main-slogan main-slogan_size_small">
           <h1 class="visually-hidden">Седона. Поиск гостиниц</h1>
           <img
             class="main-slogan__picture"
@@ -162,7 +160,7 @@
             <div class="video-presentation__player">
               <div class="video-player">
                 <picture class="video-player__picture">
-                  <source class="video-player__image"
+                  <source class="video-player__media-image"
                     media="(min-width: 768px)"
                     srcset="img/video-desktop.jpg"
                   />
@@ -172,28 +170,28 @@
                   />
                 </picture>
 
-                <div class="video-player__controls control">
-                  <div class="video-player__scroll-bar">
-                    <div class="control__scroll">
-                      <svg class="control__icon" width="235" height="13">
-                        <use href="img/video-player-icons.svg#icon-volume"></use>
+                <div class="video-player__controls control-panel">
+                  <div class="control-panel__scroll-bar">
+                    <div class="control-panel__scrol">
+                      <svg class="control-panel__icon" width="235" height="13">
+                        <use href="img/sprite-icons.svg#icon-volume"></use>
                       </svg>
                     </div>
                   </div>
-                  <div class="video-player__control-btn">
-                    <button class="control__btn control__btn_replay">
-                      <svg class="control__icon" width="16" height="20">
-                        <use href="img/video-player-icons.svg#icon-replay"></use>
+                  <div class="control-panel__buttons">
+                    <button class="control-panel__button control-panel__button_replay">
+                      <svg class="control-panel__icon" width="16" height="20">
+                        <use href="img/sprite-icons.svg#icon-replay"></use>
                       </svg>
                     </button>
-                    <button class="control__btn">
-                      <svg class="control__icon" width="32" height="20">
-                        <use href="img/video-player-icons.svg#icon-subtitles"></use>
+                    <button class="control-panel__button">
+                      <svg class="control-panel__icon" width="32" height="20">
+                        <use href="img/sprite-icons.svg#icon-subtitles"></use>
                       </svg>
                     </button>
-                    <button class="control__btn">
-                      <svg class="control__icon" width="20" height="20">
-                        <use href="img/video-player-icons.svg#icon-fullscreen"></use>
+                    <button class="control-panel__button">
+                      <svg class="control-panel__icon" width="20" height="20">
+                        <use href="img/sprite-icons.svg#icon-fullscreen"></use>
                       </svg>
                     </button>
                   </div>
@@ -212,7 +210,7 @@
               <a class="footer-social__link" href="https://twitter.com/?lang=ru"
                 >Ссылка на социальную сеть twitter
                 <svg class="footer-social__icon" width="18" height="15">
-                  <use href="img/footer-icons.svg#icon-twitter"></use>
+                  <use href="img/sprite-icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
@@ -220,7 +218,7 @@
               <a class="footer-social__link" href="https://ru-ru.facebook.com/"
                 >Ссылка на социальную сеть facebook
                 <svg class="footer-social__icon" width="9" height="19">
-                  <use href="img/footer-icons.svg#icon-facebook"></use>
+                  <use href="img/sprite-icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
@@ -228,7 +226,7 @@
               <a class="footer-social__link" href="https://www.youtube.com/"
                 >Ссылка на видеохостинг youtube
                 <svg class="footer-social__icon" width="20" height="14">
-                  <use href="img/footer-icons.svg#icon-youtube"></use>
+                  <use href="img/sprite-icons.svg#icon-youtube"></use>
                 </svg>
               </a>
             </li>
@@ -242,7 +240,7 @@
           >
             Разработано
             <svg class="footer-copyright__icon" width="27" height="35">
-              <use href="img/footer-icons.svg#icon-htmlacademy-logo"></use>
+              <use href="img/sprite-icons.svg#icon-htmlacademy-logo"></use>
             </svg>
           </a>
         </div>

@@ -1,5 +1,47 @@
-.control__scroll {
-  .control__icon {
+.control-panel {
+  position: absolute;
+  width: 100%;
+  height: 90px;
+  bottom: -50px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    bottom: 0;
+  }
+}
+
+.control-panel__scroll-bar {
+  justify-content: center;
+  height: 40px;
+  background-color: $main-content-color;
+  opacity: 0.6;
+}
+
+.control-panel__buttons {
+  height: 60px;
+  padding: 0 10px;
+  background-color: $input-bg-color;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
+}
+
+.control-panel__scroll-bar,
+.control-panel__buttons {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    height: 90px;
+  }
+}
+
+.control-panel__scrol {
+  .control-panel__icon {
     color: $light-content-color;
 
     @media (min-width: $tablet-width) {
@@ -8,7 +50,7 @@
   }
 }
 
-.control__btn {
+.control-panel__button {
   background-color: transparent;
   border: none;
   color: $player-controls-icon;
@@ -20,11 +62,11 @@
   }
 }
 
-.control__btn_replay {
+.control-panel__button_replay {
   flex-grow: 1;
 }
 
-.control__icon {
+.control-panel__icon {
   &:hover {
     color: $player-controls-icon-hover;
 
