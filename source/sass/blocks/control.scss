@@ -1,0 +1,40 @@
+.control__scroll {
+  .control__icon {
+    color: $light-content-color;
+
+    @media (min-width: $tablet-width) {
+      width: 390px;
+    }
+  }
+}
+
+.control__btn {
+  background-color: transparent;
+  border: none;
+  color: $player-controls-icon;
+  padding: 0 12px;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    color: $light-content-color;
+  }
+}
+
+.control__btn_replay {
+  flex-grow: 1;
+}
+
+.control__icon {
+  &:hover {
+    color: $player-controls-icon-hover;
+
+    @media (min-width: $tablet-width) {
+      color: $light-content-color;
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
