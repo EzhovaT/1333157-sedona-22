@@ -18,21 +18,30 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 20px 40px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 40px 36px;
+    align-items: baseline;
+    padding: 42px 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 42px 50px 42px;
   }
 }
 
 .main-advantages__cards {
   background-color: $light-content-color;
-  margin-left: 60px;
+  padding: 10px 20px 37px;
 
   @media (min-width: $tablet-width) {
+    padding: 50px 25px 60px;
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 50px 40px 76px;
   }
 }
 

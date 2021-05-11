@@ -1,7 +1,11 @@
 .footer-hashtag {
   font-weight: bold;
-  font-size: 21px;
-  line-height: 26px;
+  font-size: 18px;
+  line-height: 28px;
   text-decoration: none;
   color: $main-content-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 5px 12px 0;
+  }
 }

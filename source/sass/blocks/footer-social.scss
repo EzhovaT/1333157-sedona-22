@@ -1,10 +1,14 @@
 .footer-social__list {
   min-width: 151px;
-  margin: 38px 0;
+  margin: 35px 0 40px;
   padding: 0;
   display: flex;
   justify-content: space-between;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 39px 0;
+  }
 }
 
 .footer-social__link {
@@ -14,6 +18,10 @@
   height: 48px;
   font-size: 0;
   background-color: $main-page-color;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 6px 0 0;
+  }
 
   &:hover {
     background-color: $main-color-hover;
