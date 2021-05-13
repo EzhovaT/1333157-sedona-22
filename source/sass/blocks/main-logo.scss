@@ -1,3 +1,13 @@
 .main-logo {
   display: block;
 }
+
+.main-logo__image {
+  width: 187px;
+  height: 84px;
+
+  @media (min-width: $desktop-width) {
+    width: 190px;
+    height: 96px;
+  }
+}

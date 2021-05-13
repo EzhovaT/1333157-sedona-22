@@ -2,17 +2,21 @@
   width: 100%;
   padding: 20px 67px 20px 20px;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 24px;
   background-color: $input-bg-color;
   border: none;
   background-position: center right;
   background-repeat: no-repeat;
   background-size: contain;
 
+  @media (min-width: $desktop-width) {
+    padding: 20px 85px 20px 20px;
+  }
+
   &::placeholder {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 26px;
     color: $main-content-color;
   }

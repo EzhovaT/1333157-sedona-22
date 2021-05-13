@@ -1,14 +1,19 @@
 .form-field {
   display: flex;
   align-items: center;
-  padding-top: 20px;
+  padding: 5px 0 10px;
 }
 
 .form-field_direction_vertical {
   display: block;
 
+  @media (min-width: $tablet-width) {
+    padding: 0 0 20px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
+    padding: 0 11px 20px;
   }
 
   .form-field__label {
@@ -21,15 +26,11 @@
 }
 
 .form-field_direction_horizon {
-  @media (min-width: $tablet-width) {
-    min-width: 50%;
-  }
-
   .form-field__label {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     text-transform: none;
-    margin: 25px;
+    margin: 13px;
 
     @media (min-width: $tablet-width) {
       margin: 0 0 0 20px;
@@ -39,8 +40,12 @@
 
 .form-field__label {
   margin-right: 10px;
-  font-size: 14px;
-  line-height: 26px;
+  font-size: 13px;
+  line-height: 19px;
   color: $input-name-color;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    line-height: 30px;
+  }
 }

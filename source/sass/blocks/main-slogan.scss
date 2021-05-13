@@ -25,12 +25,32 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 75px 0 96px;
     background-image: url("../img/intro-triangle-desktop.svg"),
       url("../img/back-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/intro-triangle-desktop.svg"),
         url("../img/back-desktop@2x.jpg");
+    }
+  }
+}
+
+.main-slogan_size_small {
+  padding: 53px 20px 65px;
+
+  @media (min-width: $tablet-width) {
+    padding: 75px 0 95px;
+  }
+
+  .main-slogan__picture {
+    @media (min-width: $tablet-width) {
+      width: 460px;
+      height: 120px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 130px;
     }
   }
 }

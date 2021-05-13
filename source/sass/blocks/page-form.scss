@@ -1,4 +1,5 @@
 .page-form {
+  position: relative;
   width: 100%;
 
   @media (min-width: $tablet-width) {
@@ -21,14 +22,25 @@
     grid-column: 1/3;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 35px;
+    margin-bottom: 65px;
   }
 }
 
 .page-form__button {
-  margin: 0 auto;
+  margin: 18px auto 47px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    width: 192px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 480px;
   }
 }
 
