@@ -1,7 +1,7 @@
 .control-panel {
   position: absolute;
   width: 100%;
-  height: 90px;
+  height: 95px;
   bottom: -50px;
   padding: 0 20px;
 
@@ -13,18 +13,24 @@
 
 .control-panel__scroll-bar {
   justify-content: center;
-  height: 40px;
+  height: 45px;
   background-color: $main-content-color;
   opacity: 0.6;
+
+  @media (min-width: $tablet-width) {
+    justify-content: normal;
+    padding-left: 92px;
+  }
 }
 
 .control-panel__buttons {
-  height: 60px;
+  height: 65px;
   padding: 0 10px;
   background-color: $input-bg-color;
 
   @media (min-width: $tablet-width) {
     background-color: transparent;
+    padding: 0 20px;
   }
 }
 
@@ -36,7 +42,7 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    height: 90px;
+    height: 95px;
   }
 }
 
@@ -54,11 +60,12 @@
   background-color: transparent;
   border: none;
   color: $player-controls-icon;
-  padding: 0 12px;
+  padding: 0 15px;
   text-align: left;
 
   @media (min-width: $tablet-width) {
     color: $light-content-color;
+    padding: 0 20px 0 15px;
   }
 }
 

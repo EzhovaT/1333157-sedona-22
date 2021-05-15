@@ -50,11 +50,41 @@
   margin: 31px auto 0;
   font-size: 12px;
   line-height: 25px;
+}
 
-  &::after {
-    content: url("../img/white-triangle.svg");
-    position: absolute;
-    right: -20px;
-    bottom: -57px;
+.main-tagline_page_index {
+  .main-tagline__description {
+    &::after {
+      content: url("../img/white-triangle.svg");
+      position: absolute;
+      right: -20px;
+      bottom: -57px;
+
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+    }
+  }
+}
+
+.main-tagline_page_catalog {
+  @media (min-width: $tablet-width) {
+    padding: 65px 0 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 0 80px;
+  }
+
+  .main-tagline__title {
+    @media (min-width: $tablet-width) {
+      font-size: 26px;
+    }
+  }
+
+  .main-tagline__description {
+    @media (min-width: $tablet-width) {
+      margin: 31px 80px 0;
+    }
   }
 }
