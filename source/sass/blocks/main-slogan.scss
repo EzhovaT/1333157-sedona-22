@@ -43,6 +43,10 @@
     padding: 75px 0 95px;
   }
 
+  @media (min-width: $desktop-width) {
+    background-position: center bottom, center bottom;
+  }
+
   .main-slogan__picture {
     @media (min-width: $tablet-width) {
       width: 460px;
