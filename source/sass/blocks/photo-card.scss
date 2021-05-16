@@ -1,6 +1,10 @@
 .photo-card {
+  padding: 20px;
+
   @media (min-width: $tablet-width) {
+    padding: 0;
     width: 100%;
+    position: relative;
   }
 }
 
@@ -17,20 +21,24 @@
   margin-top: 15px;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     display: grid;
     grid-template-columns: minmax(209px, 500px) 1fr;
     background-color: $input-bg-color;
-    max-height: 80px;
+    // max-height: 80px;
     padding: 15px 30px 15px 20px;
     margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {
-    position: relative;
+
     background-color: rgba(0, 0, 0, 0.3);
     color: $light-content-color;
-    top: -80px;
-    margin-bottom: -80px;
+    // top: -80px;
+    // margin-bottom: -80px;
   }
 }
 
