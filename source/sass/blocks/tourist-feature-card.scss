@@ -6,7 +6,7 @@
   border-bottom: 2px solid $card-border-color;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
+    padding: 0 40px;
     border: none;
     max-width: 246px;
   }
@@ -29,12 +29,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 5px 74px;
+    margin: 5px 85px;
   }
 }
 
 .tourist-feature-card__description {
-  margin: 20px 0;
+  margin: 18px 0;
 
   @media (min-width: $tablet-width) {
     margin: 25px 0;
@@ -51,14 +51,15 @@
 
 .tourist-feature-card__description,
 .tourist-feature-card__number {
-  font-size: 13px;
-  line-height: 19px;
+  font-size: 14px;
+  line-height: 21px;
 
   @media (min-width: $tablet-width) {
+    font-size: 13px;
     line-height: 22px;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 12px;
+    font-size: 14px;
   }
 }

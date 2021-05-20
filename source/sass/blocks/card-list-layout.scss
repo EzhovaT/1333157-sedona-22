@@ -12,7 +12,12 @@
 .card-list-layout__main-item {
   grid-column: 1/3;
 
+  @media (min-width: $tablet-width) {
+    height: 485px;
+  }
+
   @media (min-width: $desktop-width) {
     grid-column: 1/4;
+    height: auto;
   }
 }

@@ -1,5 +1,5 @@
 .photo-card {
-  padding: 20px;
+  padding: 20px 0 0;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -11,8 +11,11 @@
 .photo-card__image {
   display: block;
   width: 100%;
-  min-height: 267px;
   object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
 
 .photo-card__description {
@@ -28,17 +31,13 @@
     display: grid;
     grid-template-columns: minmax(209px, 500px) 1fr;
     background-color: $input-bg-color;
-    // max-height: 80px;
     padding: 15px 30px 15px 20px;
     margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {
-
     background-color: rgba(0, 0, 0, 0.3);
     color: $light-content-color;
-    // top: -80px;
-    // margin-bottom: -80px;
   }
 }
 
@@ -56,12 +55,17 @@
 .photo-card__title {
   margin: 0;
   grid-column: 1;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .photo-card__title {
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.photo-card__picture-link {
+  max-height: 484px;
+  display: block;
 }
 
 .photo-card__like {

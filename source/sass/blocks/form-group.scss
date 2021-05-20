@@ -93,6 +93,7 @@
 
   .form-group__field {
     @media (min-width: $tablet-width) {
+      width: 450px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -100,6 +101,7 @@
     }
 
     @media (min-width: $desktop-width) {
+      width: 100%;
       flex-wrap: nowrap;
       justify-content: space-around;
     }

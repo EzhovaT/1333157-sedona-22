@@ -19,18 +19,23 @@
 
   @media (min-width: $tablet-width) {
     padding: 64px 0 82px;
-
-    .main-tagline__title {
-      font-size: 25px;
-    }
-
-    .main-tagline__description {
-      margin: 31px 55px 0;
-    }
   }
 
   @media (min-width: $desktop-width) {
     padding: 113px 0 58px;
+  }
+
+  .main-tagline__title {
+    @media (min-width: $tablet-width) {
+      font-size: 25px;
+    }
+  }
+
+  .main-tagline__description {
+    @media (min-width: $tablet-width) {
+      font-size: 15px;
+      margin: 31px 55px 0;
+    }
   }
 }
 
@@ -48,12 +53,24 @@
 .main-tagline__description {
   position: relative;
   margin: 31px auto 0;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 25px;
 }
 
 .main-tagline_page_index {
+  .main-tagline__title {
+    font-size: 19px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+    }
+  }
+
   .main-tagline__description {
+    @media (min-width: $tablet-width) {
+      font-size: 14px;
+    }
+
     &::after {
       content: url("../img/white-triangle.svg");
       position: absolute;
@@ -68,6 +85,8 @@
 }
 
 .main-tagline_page_catalog {
+  padding: 34px 20px 30px;
+
   @media (min-width: $tablet-width) {
     padding: 65px 0 75px;
   }
@@ -78,13 +97,17 @@
 
   .main-tagline__title {
     @media (min-width: $tablet-width) {
-      font-size: 26px;
+      font-size: 30px;
     }
   }
 
   .main-tagline__description {
+    font-size: 14px;
+    line-height: 23px;
+
     @media (min-width: $tablet-width) {
-      margin: 31px 80px 0;
+      margin: 31px 70px 0;
+      line-height: 25px;
     }
   }
 }
