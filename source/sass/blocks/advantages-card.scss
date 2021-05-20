@@ -92,7 +92,7 @@
 
 .advantages-card__description,
 .advantages-card__number {
-  margin: 16px 0 0 50px;
+  margin: 16px 20px 0 50px;
   font-weight: bold;
   font-size: 13px;
   line-height: 21px;
@@ -103,6 +103,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 2px 23px;
+    font-size: 15px;
+    margin: 2px 20px;
   }
 }

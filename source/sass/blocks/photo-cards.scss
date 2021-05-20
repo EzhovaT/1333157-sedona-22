@@ -16,7 +16,7 @@
 }
 
 .photo-cards__item {
-  padding: 20px 0 0;
+  padding: 0;
   border-top: 1px solid $border-color;
   display: flex;
   justify-content: center;
@@ -25,5 +25,11 @@
   @media (min-width: $tablet-width) {
     border: none;
     padding: 0;
+    height: 345px;
+    overflow: hidden;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 265px;
   }
 }
