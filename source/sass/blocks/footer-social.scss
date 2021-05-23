@@ -1,17 +1,13 @@
 .footer-social__list {
   min-width: 151px;
-  margin: 33px 0 43px;
+  margin: 34px 0 45px;
   padding: 0;
   display: flex;
   justify-content: space-between;
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
-    margin: 40px 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 36px 0;
+    margin: 0;
   }
 }
 

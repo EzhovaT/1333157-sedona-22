@@ -1,6 +1,7 @@
-.page-footer {
+.page-footer__inner-wrapper {
   min-width: 151px;
-  padding: 39px 29px 30px;
+  margin: 36px 0;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -9,10 +10,12 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    padding: 0 50px;
+    padding: 0 50px 40px 50px;
+    margin: 40px 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 104px;
+    margin: 38px 0;
+    padding: 0 104px 35px 104px;
   }
 }
