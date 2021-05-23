@@ -1,5 +1,5 @@
 .form-group__field {
-  margin: 15px 20px;
+  margin: 20px 20px;
 
   @media (min-width: $tablet-width) {
     margin: 50px 20px 20px;
@@ -8,17 +8,16 @@
 
 .form-group__title {
   width: 100%;
-  margin: 20px auto 0;
   font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 26px;
   text-align: center;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    font-size: 19px;
-    line-height: 25px;
-    margin: 0 auto;
+    font-size: 21px;
+    line-height: 26px;
+    margin-top: 18px;
   }
 }
 
@@ -59,69 +58,111 @@
 
 .form-group_user_full-name {
   .form-group__field {
+    margin: 5px 20px;
+
     @media (min-width: $tablet-width) {
-      margin-left: 60px;
+      margin: 55px 20px 5px 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 55px 35px 0 51px;
     }
   }
 
   .form-group__title {
     @media (min-width: $tablet-width) {
       text-align: start;
-      margin-left: 50px;
+      margin-left: 57px;
+      margin-top: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 0 0 52px;
     }
   }
 }
 
 .form-group_user_impression {
   .form-group__field {
+    margin: 20px 20px 13px;
+
+    @media (min-width: $tablet-width) {
+      margin: 55px 20px 0;
+    }
+
     @media (min-width: $desktop-width) {
-      margin: 50px 35px 20px;
+      margin: 57px 40px 20px;
+    }
+  }
+
+  .form-group__title {
+    margin-top: 20px;
+
+    @media (min-width: $tablet-width) {
+      text-align: left;
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      text-align: center;
+      padding: 0;
+      margin-top: 0;
     }
   }
 }
 
 .form-group_user_visit {
   .form-group__title {
+    margin: 14px 0 16px;
+
     @media (min-width: $tablet-width) {
       margin: 0 0 22px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-top: -90px;
+      margin-top: -100px;
     }
   }
 
   .form-group__field {
+    margin-bottom: 0;
+
     @media (min-width: $tablet-width) {
-      width: 450px;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
-      margin: 35px auto 0;
+      justify-content: space-around;
+      margin: 40px 72px 0 94px;
     }
 
     @media (min-width: $desktop-width) {
       width: 100%;
       flex-wrap: nowrap;
-      justify-content: space-around;
+      margin: 38px 0 0 0;
     }
   }
 }
 
 .form-group_user_feedback {
   .form-group__title {
+    margin: 20px 0 -8px;
+
     @media (min-width: $tablet-width) {
-      margin-top: 30px;
+      margin-top: 31px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-top: 0;
+      margin-top: 28px;
     }
   }
 
   .form-group__field {
+    @media (min-width: $tablet-width) {
+      margin: 23px 20px 30px;
+    }
+
     @media (min-width: $desktop-width) {
-      margin: 39px 0 54px;
+      margin: 43px 0 54px;
     }
   }
 }
@@ -129,13 +170,24 @@
 .form-group_user_emotions {
   .form-group__title {
     @media (min-width: $tablet-width) {
-      margin-top: 50px;
+      margin-top: 37px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 37px;
     }
   }
 
   .form-group__field {
+    margin-bottom: 23px;
+
     @media (min-width: $tablet-width) {
-      margin-bottom: 40px;
+      margin: 55px 20px 33px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 50px auto 38px;
+      max-width: 982px;
     }
   }
 }

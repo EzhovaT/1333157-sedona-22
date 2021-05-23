@@ -1,21 +1,11 @@
 .advantages-card {
   position: relative;
-  padding: 26px 0 0;
+  padding: 24px 0 5px;
 
   &::before {
     width: 39px;
     height: 37px;
     position: absolute;
-    top: 17px;
-    left: 3px;
-
-    @media (min-width: $tablet-width) {
-      left: 67px;
-    }
-
-    @media (min-width: $desktop-width) {
-      left: 123px;
-    }
   }
 
   @media (min-width: $tablet-width) {
@@ -23,87 +13,142 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-top: 70px;
-    max-width: 205px;
+    padding: 70px 0 0;
+    width: 205px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 313px;
+    width: 318px;
   }
 }
 
 .advantages-card_icon_house {
   &::before {
     content: url("../img/icon-house.svg");
+    top: 15px;
+    left: 0;
 
     @media (min-width: $tablet-width) {
       width: 75px;
       height: 72px;
       top: 11px;
+      left: 65px;
+    }
+  }
+
+  .advantages-card__description {
+    @media (min-width: $tablet-width) {
+      width: 180px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 282px;
     }
   }
 }
 
 .advantages-card_icon_present {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+
   &::before {
     content: url("../img/icon-gift.svg");
     width: 32px;
+    top: 12px;
+    left: 5px;
 
     @media (min-width: $tablet-width) {
       width: 64px;
       height: 75px;
       top: 6px;
+      left: 70px;
     }
   }
 
-  @media (min-width: $tablet-width) {
-    order: 2;
+  .advantages-card__description {
+    @media (min-width: $tablet-width) {
+      width: 215px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 244px;
+    }
   }
 }
 
 .advantages-card_icon_food {
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+
   &::before {
     content: url("../img/icon-burger.svg");
+    top: 16px;
+    left: -2px;
 
     @media (min-width: $tablet-width) {
       width: 76px;
       height: 68px;
       top: 14px;
+      left: 63px;
     }
   }
 
-  @media (min-width: $tablet-width) {
-    order: 1;
+  .advantages-card__description {
+    @media (min-width: $tablet-width) {
+      width: 157px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 300px;
+    }
+  }
+}
+
+.advantages-card_icon_house,
+.advantages-card_icon_present,
+.advantages-card_icon_food {
+  &::before {
+    @media (min-width: $desktop-width) {
+      left: 120px;
+    }
   }
 }
 
 .advantages-card__title {
-  margin: 0 0 0 50px;
+  margin: 0 0 15px 50px;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 26px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
     padding: 38px 0 22px;
-    font-size: 21px;
+    font-size: 20px;
+  }
+}
+
+.advantages-card__tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
 
 .advantages-card__description,
 .advantages-card__number {
-  margin: 16px 20px 0 50px;
-  font-weight: bold;
-  font-size: 13px;
   line-height: 21px;
+  margin: 0 13px 0 50px;
+  font-size: 14px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    line-height: 22px;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 15px;
+    line-height: 21px;
     margin: 2px 20px;
   }
 }

@@ -14,7 +14,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 75px 0 93px;
+    padding: 75px 0 95px;
     background-image: url("../img/intro-triangle-tablet.svg"),
       url("../img/back-tablet.jpg");
 
@@ -25,7 +25,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 75px 0 96px;
     background-image: url("../img/intro-triangle-desktop.svg"),
       url("../img/back-desktop.jpg");
 

@@ -1,14 +1,16 @@
 .button {
   display: block;
+  text-transform: uppercase;
   min-width: 280px;
-  padding: 13px 0 18px;
+  padding: 16px 0;
   text-decoration: none;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 21px;
   line-height: 26px;
   color: $light-content-color;
   background-color: $main-page-color;
   border: none;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
 
   &:hover {
     background-color: $main-color-hover;

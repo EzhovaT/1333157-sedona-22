@@ -9,13 +9,10 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
-    <object class="page__sprite-icons"
-      data="img/sprite.svg"
-      type="image/svg+xml"
-    ></object>
+    <object class="page__sprite-icons" data="img/sprite.svg" type="image/svg+xml"></object>
     <div class="page__wrapper">
       <header class="page-header">
-        <nav class="main-nav main-nav_nojs main-nav_closed-menu">
+        <nav class="main-nav main-nav_nojs">
           <ul class="main-nav__list nav-list">
             <li class="nav-list__item main-nav__item">
               <a class="nav-list__link" href="index.html">Главная</a>
@@ -27,27 +24,14 @@
               <span class="nav-list__item-content">Форма отзыва</span>
             </li>
             <li class="nav-list__item main-nav__item">
-              <a class="nav-list__link" href="https://htmlacademy.ru"
-                >HTML Academy</a
-              >
+              <a class="nav-list__link" href="https://htmlacademy.ru">HTML Academy</a>
             </li>
             <li class="nav-list__item nav-list__item_logo main-nav__item main-nav__item_logo">
               <a class="main-logo" href="index.html">
                 <picture class="main-logo__picture">
-                  <source class="main-logo__image-source"
-                    media="(min-width: 1200px)"
-                    srcset="img/logotype-desktop.svg"
-                  />
-                  <source class="main-logo__image-source"
-                    media="(min-width: 768px)"
-                    srcset="img/logotype-tablet.svg"
-                  />
-                  <img class="main-logo__image"
-                    width="186"
-                    height="96"
-                    src="img/logotype-mobile.svg"
-                    alt="Основной логотип сайта"
-                  />
+                  <source class="main-logo__image-source" media="(min-width: 1200px)" srcset="img/logotype-desktop.svg"/>
+                  <source class="main-logo__image-source" media="(min-width: 768px)" srcset="img/logotype-tablet.svg"/>
+                  <img class="main-logo__image" width="186" height="96" src="img/logotype-mobile.svg" alt="Основной логотип сайта"/>
                 </picture>
               </a>
             </li>
@@ -61,235 +45,112 @@
       <main class="page-content">
         <div class="main-slogan main-slogan_size_small">
           <h1 class="visually-hidden">Седона. Поиск гостиниц</h1>
-          <img
-            width="230" height="40"
-            class="main-slogan__picture"
-            src="img/sedona.svg"
-            alt="Приветственное изображение названия города Седоны"
-          />
+          <img width="230" height="40" class="main-slogan__picture" src="img/sedona.svg" alt="Приветственное изображение названия города Седоны"/>
         </div>
 
         <div class="main-tagline main-tagline_size_small">
           <h2 class="main-tagline__title">Оставьте свой отзыв</h2>
-          <p class="main-tagline__description">
-            Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о
-            посещенных вами достопримечательностях
-          </p>
+          <p class="main-tagline__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
 
-        <form
-          class="page-form feedback-form"
-          action="https://echo.htmlacademy.ru"
-        >
-          <fieldset
-            class="page-form__fieldset page-form__fieldset_direction_right-column form-group form-group_user_full-name"
-          >
+        <form class="page-form feedback-form" action="https://echo.htmlacademy.ru">
+          <fieldset class="page-form__fieldset page-form__fieldset_direction_right-column form-group form-group_user_full-name">
             <legend class="visually-hidden">Представьтесь:</legend>
             <h3 class="form-group__title">Представьтесь:</h3>
             <div class="form-group__field">
               <div class="form-field form-field_wide">
-                <label class="form-field__label" for="user-name"
-                  >Имя<sup>*</sup>:</label
-                >
+                <label class="form-field__label" for="user-name">Имя<sup>*</sup>:</label>
                 <div class="form-field__input">
-                  <input
-                    class="text-field"
-                    type="text"
-                    id="user-name"
-                    name="user-name"
-                    placeholder="Петр"
-                    required
-                  />
+                  <input class="text-field" type="text" id="user-name" name="user-name" placeholder="Петр" required/>
                 </div>
               </div>
               <div class="form-field form-field_wide">
-                <label class="form-field__label" for="user-surname"
-                  >Фамилия<sup>*</sup>:</label
-                >
+                <label class="form-field__label" for="user-surname">Фамилия<sup>*</sup>:</label>
                 <div class="form-field__input">
-                  <input
-                    class="text-field"
-                    type="text"
-                    id="user-surname"
-                    name="user-surname"
-                    placeholder="Иванов"
-                    required
-                  />
+                  <input class="text-field" type="text" id="user-surname" name="user-surname" placeholder="Иванов" required/>
                 </div>
               </div>
               <div class="form-field form-field_wide">
-                <label class="form-field__label" for="user-patronymic"
-                  >Отчество:</label
-                >
+                <label class="form-field__label" for="user-patronymic">Отчество:</label>
                 <div class="form-field__input">
-                  <input
-                    class="text-field"
-                    type="text"
-                    id="user-patronymic"
-                    name="user-patronymic"
-                    placeholder="Александрович"
-                  />
+                  <input class="text-field" type="text" id="user-patronymic" name="user-patronymic" placeholder="Александрович"/>
                 </div>
               </div>
             </div>
           </fieldset>
 
-          <fieldset
-            class="page-form__fieldset form-group form-group_user_feedback"
-          >
+          <fieldset class="page-form__fieldset form-group form-group_user_feedback">
             <legend class="visually-hidden">Контактная информация:</legend>
             <h3 class="form-group__title">Контактная информация:</h3>
             <div class="form-group__field feedback-form__field">
               <div class="form-field form-field_direction_vertical">
                 <label class="form-field__label" for="user-phone">
-                  <span class="feedback-form__label">Контактный&nbsp;</span
-                  >телефон<sup>*</sup>:</label
-                >
+                  <span class="feedback-form__label">Контактный&nbsp;</span>телефон<sup>*</sup>:</label>
                 <div class="form-field__input">
-                  <input
-                    class="text-field text-field_icon_phone"
-                    type="tel"
-                    id="user-phone"
-                    name="user-phone"
-                    placeholder="Введите телефон"
-                    required
-                  />
+                  <input class="text-field text-field_icon_phone" type="tel" id="user-phone" name="user-phone" placeholder="Введите телефон" required/>
                 </div>
               </div>
               <div class="form-field form-field_direction_vertical">
-                <label class="form-field__label" for="user-email"
-                  >Электронная почта<sup>*</sup>:</label
-                >
+                <label class="form-field__label" for="user-email">Электронная почта<sup>*</sup>:</label>
                 <div class="form-field__input">
-                  <input
-                    class="text-field text-field_icon_email"
-                    type="email"
-                    id="user-email"
-                    name="user-email"
-                    placeholder="Введите e-mail"
-                    required
-                  />
+                  <input class="text-field text-field_icon_email" type="email" id="user-email" name="user-email" placeholder="Введите e-mail" required/>
                 </div>
               </div>
             </div>
           </fieldset>
 
-          <fieldset
-            class="page-form__fieldset page-form__fieldset_direction_left-column form-group form-group_user_impression"
-          >
+          <fieldset class="page-form__fieldset page-form__fieldset_direction_left-column form-group form-group_user_impression">
             <legend class="visually-hidden">Ваше общее впечатление:</legend>
             <h3 class="form-group__title">Ваше общее впечатление:</h3>
             <div class="form-group__field">
               <div class="form-field form-field_direction_horizon">
                 <div class="form-field__input">
-                  <input
-                    class="radio-field"
-                    type="radio"
-                    id="positive"
-                    name="impression"
-                    value="Скорее положительное"
-                    checked
-                  />
+                  <input class="radio-field" type="radio" id="positive" name="impression" value="Скорее положительное" checked/>
                 </div>
-                <label class="form-field__label" for="positive">
-                  Скорее положительное
-                </label>
+                <label class="form-field__label" for="positive">Скорее положительное</label>
               </div>
               <div class="form-field form-field_direction_horizon">
                 <div class="form-field__input">
-                  <input
-                    class="radio-field"
-                    type="radio"
-                    id="negative"
-                    name="impression"
-                    value="Скорее отрицательное"
-                  />
+                  <input class="radio-field" type="radio" id="negative" name="impression" value="Скорее отрицательное"/>
                 </div>
-                <label class="form-field__label" for="negative"
-                  >Скорее отрицательное
-                </label>
+                <label class="form-field__label" for="negative">Скорее отрицательное</label>
               </div>
               <div class="form-field form-field_direction_horizon">
                 <div class="form-field__input">
-                  <input
-                    class="radio-field"
-                    type="radio"
-                    id="no-answer"
-                    name="impression"
-                    value="Затрудняюсь ответить"
-                  />
+                  <input class="radio-field" type="radio" id="no-answer" name="impression" value="Затрудняюсь ответить"/>
                 </div>
-                <label class="form-field__label" for="no-answer"
-                  >Затрудняюсь ответить
-                </label>
+                <label class="form-field__label" for="no-answer">Затрудняюсь ответить</label>
               </div>
             </div>
           </fieldset>
 
-          <fieldset
-            class="page-form__fieldset form-group form-group_user_visit"
-          >
-            <legend class="visually-hidden">
-              Посещенные достопримечательности:
-            </legend>
+          <fieldset class="page-form__fieldset form-group form-group_user_visit">
+            <legend class="visually-hidden">Посещенные достопримечательности:</legend>
             <h3 class="form-group__title">Посещенные <br> достопримечательности:</h3>
             <div class="form-group__field">
-              <div class="form-field form-field_direction_horizon">
+              <div class=" form-field form-field_direction_horizon form-field_user_visit">
                 <div class="form-field__input">
-                  <input
-                    class="checkbox-field"
-                    type="checkbox"
-                    id="bridge"
-                    name="attractions[]"
-                    value="Мост Дьявола"
-                    checked
-                  />
+                  <input class="checkbox-field" type="checkbox" id="bridge" name="attractions[]" value="Мост Дьявола" checked/>
                 </div>
-                <label class="form-field__label" for="bridge"
-                  >Мост Дьявола
-                </label>
+                <label class="form-field__label" for="bridge">Мост Дьявола</label>
               </div>
-              <div class="form-field form-field_direction_horizon">
+              <div class="form-field form-field_direction_horizon form-field_user_visit">
                 <div class="form-field__input">
-                  <input
-                    class="checkbox-field"
-                    type="checkbox"
-                    id="mountain"
-                    name="attractions[]"
-                    value="Гора-Колокол"
-                    checked
-                  />
+                  <input class="checkbox-field" type="checkbox" id="mountain" name="attractions[]" value="Гора-Колокол" checked/>
                 </div>
-                <label class="form-field__label" for="mountain"
-                  >Гора-Колокол
-                </label>
+                <label class="form-field__label" for="mountain">Гора-Колокол</label>
               </div>
-              <div class="form-field form-field_direction_horizon">
+              <div class="form-field form-field_direction_horizon form-field_user_visit">
                 <div class="form-field__input">
-                  <input
-                    class="checkbox-field"
-                    type="checkbox"
-                    id="park"
-                    name="attractions[]"
-                    value="Слайд-парк"
-                    checked
-                  />
+                  <input class="checkbox-field" type="checkbox" id="park" name="attractions[]" value="Слайд-парк" checked/>
                 </div>
                 <label class="form-field__label" for="park"> Слайд-парк </label>
               </div>
-              <div class="form-field form-field_direction_horizon">
+              <div class="form-field form-field_size_small form-field_direction_horizon form-field_user_visit">
                 <div class="form-field__input">
-                  <input
-                    class="checkbox-field"
-                    type="checkbox"
-                    id="rocks"
-                    name="attractions[]"
-                    value="Красные скалы"
-                  />
+                  <input class="checkbox-field" type="checkbox" id="rocks" name="attractions[]" value="Красные скалы"/>
                 </div>
-                <label class="form-field__label" for="rocks">
-                  Красные скалы
-                </label>
+                <label class="form-field__label" for="rocks">Красные скалы</label>
               </div>
             </div>
           </fieldset>
@@ -299,43 +160,28 @@
             <h3 class="form-group__title">Опишите свои эмоции:</h3>
             <div class="form-group__field">
               <div class="form-field form-field_direction_vertical">
-                <textarea
-                  class="textarea-field"
-                  name="emotions"
-                  id="user-emotions"
-                  placeholder="Опишите подробно все свои восторги"
-                ></textarea>
+                <textarea class="textarea-field" name="emotions" id="user-emotions" placeholder="Опишите подробно все свои восторги"></textarea>
               </div>
             </div>
           </fieldset>
 
           <div class="page-form__footer">
-            <button class="page-form__button button" type="submit">
-              Отправить отзыв
-            </button>
+            <button class="page-form__button button" type="submit">Отправить отзыв</button>
             <p class="page-form__footnotes"><sup>*</sup>- Обязательные поля</p>
           </div>
         </form>
 
         <div class="page-popup page-popup_succes">
           <p class="page-popup__title">Ваш отзыв отправлен!</p>
-          <p class="page-popup__description">
-            Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее
-            время мы опубликуем его на сайте.
-          </p>
+          <p class="page-popup__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
           <div class="page-popup__close-block">
-            <button class="page-popup__button button" type="reset">
-              Закрыть окно
-            </button>
+            <button class="page-popup__button button" type="reset">Закрыть окно</button>
           </div>
         </div>
 
         <div class="page-popup page-popup_failur">
           <p class="page-popup__title">Что-то пошло не так!</p>
-          <p class="page-popup__description">
-            Проверьте поля, выделенные красным, скорее всего вы забыли их
-            заполнить
-          </p>
+          <p class="page-popup__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
           <button class="page-popup__button button" type="button">Ок</button>
         </div>
       </main>
@@ -345,24 +191,21 @@
         <div class="footer-social">
           <ul class="footer-social__list">
             <li class="footer-social__item">
-              <a class="footer-social__link" href="https://twitter.com/?lang=ru"
-                >Ссылка на социальную сеть twitter
+              <a class="footer-social__link" href="https://twitter.com/?lang=ru">Ссылка на социальную сеть twitter
                 <svg class="footer-social__icon" width="18" height="15">
                   <use href="img/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-social__item">
-              <a class="footer-social__link" href="https://ru-ru.facebook.com/"
-                >Ссылка на социальную сеть facebook
+              <a class="footer-social__link" href="https://ru-ru.facebook.com/">Ссылка на социальную сеть facebook
                 <svg class="footer-social__icon" width="9" height="19">
                   <use href="img/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-social__item">
-              <a class="footer-social__link" href="https://www.youtube.com/"
-                >Ссылка на видеохостинг youtube
+              <a class="footer-social__link" href="https://www.youtube.com/">Ссылка на видеохостинг youtube
                 <svg class="footer-social__icon" width="20" height="14">
                   <use href="img/sprite.svg#icon-youtube"></use>
                 </svg>
@@ -371,12 +214,7 @@
           </ul>
         </div>
         <div class="footer-copyright">
-          <a
-            class="footer-copyright__link"
-            href="https://htmlacademy.ru/intensive/adaptive"
-            title="Ссылка на интенсив в HTML Academy"
-          >
-            Разработано
+          <a class="footer-copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="Ссылка на интенсив в HTML Academy">Разработано
             <svg class="footer-copyright__icon" width="27" height="35">
               <use href="img/sprite.svg#icon-htmlacademy-logo"></use>
             </svg>
