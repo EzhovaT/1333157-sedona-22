@@ -16,6 +16,7 @@
 
 .map-canvas__picture {
   display: none;
+  height: 350px;
 }
 
 .map-canvas__image {
@@ -27,8 +28,8 @@
 .map-canvas__icon {
   display: none;
   position: absolute;
-  bottom: 169px;
-  left: 146px;
+  bottom: 162px;
+  left: 145px;
 
   @media (min-width: $tablet-width) {
     bottom: 155px;

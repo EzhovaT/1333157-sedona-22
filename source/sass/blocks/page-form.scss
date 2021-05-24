@@ -46,19 +46,19 @@
 }
 
 .page-form__footer {
-  padding: 0 20px;
-  margin: 13px auto 37px;
+  padding: 12px 20px 35px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/3;
     display: flex;
     justify-content: space-between;
-    margin: 0 0 57px;
+    margin: 0;
+    padding: 0 20px 58px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 35px;
-    margin-bottom: 64px;
+    padding: 0 35px 64px;
   }
 }
 

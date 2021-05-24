@@ -1,5 +1,3 @@
-// "use strict";
-
 const btn = document.querySelector(".main-nav__toggle"),
   nav = document.querySelector(".main-nav"),
   map = document.querySelector(".map-canvas");

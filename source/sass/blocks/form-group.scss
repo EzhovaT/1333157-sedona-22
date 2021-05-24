@@ -84,7 +84,7 @@
 
 .form-group_user_impression {
   .form-group__field {
-    margin: 20px 20px 13px;
+    margin: 20px 20px 10px;
 
     @media (min-width: $tablet-width) {
       margin: 55px 20px 0;
@@ -126,7 +126,7 @@
   }
 
   .form-group__field {
-    margin-bottom: 0;
+    margin-bottom: 3px;
 
     @media (min-width: $tablet-width) {
       display: flex;

@@ -50,10 +50,10 @@
 }
 
 .form-field_direction_horizon {
-  padding: 0 0 10px;
+  padding: 0 0 15px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 18px;
+    padding-bottom: 23px;
   }
 
   .form-field__label {
@@ -68,7 +68,7 @@
   }
 
   .form-field__input {
-    height: 60px;
+    height: 55px;
   }
 }
 
@@ -79,12 +79,13 @@
   @media (min-width: $tablet-width) {
     height: 90px;
     width: 220px;
-    padding-bottom: 27px;
+    padding-bottom: 31px;
     justify-content: flex-end;
   }
 
   @media (min-width: $desktop-width) {
     width: 258px;
+    padding-bottom: 27px;
   }
 
   .form-field__label {

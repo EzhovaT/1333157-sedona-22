@@ -24,18 +24,18 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
-    padding: 42px 0 17px;
+    padding: 41px 0 17px;
     text-align: left;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 40px 50px 45px;
+    padding: 42px 50px 45px;
   }
 }
 
 .main-advantages__cards {
   background-color: $light-content-color;
-  padding: 10px 20px 30px;
+  padding: 10px 20px 33px;
 
   @media (min-width: $tablet-width) {
     padding: 50px 25px 62px;
